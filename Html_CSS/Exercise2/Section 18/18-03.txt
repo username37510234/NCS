@@ -1,0 +1,15 @@
+/* 애니메이션의 동작을 지정 */
+            /* 애니메이션 이름 지정 - rint */
+            animation-name: rint;
+            /* 애니메이션을 몇 초 동안 재생할지 지정 */
+            animation-duration: 2s;
+            /* 수치 변형 함수를 지정. 애니메이션 속도의 변화 */
+            animation-timing-function: linear;
+            /* 여기서부터 입력 */
+            /* 반복 횟수 : 무한 반복 */
+            animation-iteration-count: infinite;          
+           }
+
+
+
+

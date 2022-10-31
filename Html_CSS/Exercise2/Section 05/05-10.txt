@@ -1,0 +1,30 @@
+﻿<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        background: #000;
+        color: white;
+    }
+    
+    body {
+        font-family: '돋움';
+        font-size: 12px;
+    }
+    
+    body {
+        line-height: 30px;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    /* a 속성을 가진 링크에 어떤 꾸밈도 하지 않음 */
+    
+    a {
+        color: yellow;
+    }
+    /* 링크를 지정한 글자의 색상을 노란색으로 지정 */
+</style>

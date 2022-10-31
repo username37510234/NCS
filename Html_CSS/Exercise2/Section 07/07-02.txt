@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Keat</title>
+    <style>
+        div {
+            width: 300px;
+            /* 넓이 */
+            height: 300px;
+            /* 높이 */
+            border: 2px solid black;
+            /* 테두리 스타일 */
+        }
+        
+        .box1 {
+            float: left;
+            /* 해당 요소를 왼쪽으로 배치 */
+        }
+        
+        .box2 {
+            float: left;
+            /* 해당 요소를 왼쪽으로 배치 */
+        }
+        
+        .box3 {
+            float: left;
+            /* 해당 요소를 왼쪽으로 배치 */
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="box1">01</div>
+    <div class="box2">02</div>
+    <div class="box3">03</div>
+    
+</body>
+</html>

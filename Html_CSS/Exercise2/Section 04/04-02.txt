@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>이미지 태그</title>
+</head>
+<body>
+
+   <img src="https://cdn.pixabay.com/photo/2019/03/26/17/19/easter-4083192__340.jpg">
+
+</body>
+</html>

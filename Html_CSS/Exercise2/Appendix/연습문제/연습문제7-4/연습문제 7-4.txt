@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">    
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>연습문제 7-4</title>
+    <style>
+        /*-----------웹 문서 제작 시 초기화 스타일-------*/
+        
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        a {
+            /* 링크 속성 글자 밑줄 없앰 */
+            text-decoration: none;
+        }
+        
+        li {
+            /* 항목 태그 블릿 아이콘 장식 없앰 */
+            list-style: none;
+        }
+        
+        img {
+            /* inline 속성을 지니고 있는 img 태그의 오차 간격을 없애기 위한 속성 변경 */
+            display: block;
+            /* img 태그의 모든 테두리선은 없음으로 초기화 */
+            border: none;
+        }
+        
+        body {
+            /* 글꼴 */
+            font-family: 'Arial';
+            /* 글자 크기 */
+            font-size: 16px;
+            /* 글자 색상 */
+            color: black;
+            /* 줄 간격 */
+            line-height: 28px;
+        }
+        /*----------여기서부터 디자인---------*/
+        /* header */
+        
+        #header {
+            /* 가로 넓이 */
+            width: 100%;
+            /* 세로 높이 */
+            height: 120px;
+            /*  높이만큼 보여짐 */
+            overflow: hidden;
+            /* 글자 정렬 */
+            text-align: center;
+        }
+        /* 상단메뉴 */
+        
+        #header>ul {
+            /* 속성 변경 */
+            display: inline-block;
+            /* 세로 높이 */
+            height: 53px;
+            /*  높이만큼 보여짐 */
+            overflow: hidden;
+            /* 바깥쪽 상단 여백 */
+            margin-top: 33px;
+        }
+        
+        #header>ul>li {
+            /* 왼쪽 기준 정렬 */
+            float: left;
+            /* 왼쪽 안쪽 여백 */
+            padding-left: 10px;
+            /* 오른쪽 안쪽 여백 */
+            padding-right: 10px;
+            /* 줄 간격 */
+            line-height: 30px;
+            /* 바깥쪽 왼쪽 여백 */
+            margin-left: 30px;
+            /* 바깥쪽 오른쪽 여백 */
+            margin-right: 30px;
+            /* 바깥쪽 상단 여백 */
+            margin-top: 27px;
+        }
+        
+        #header>ul>li>a {
+            /* 글자 색상 */
+            color: #000000;
+        }
+        
+        #header>ul>li:hover {
+            /* li 태그에 마우스를 올렸을 때 글자의 밑줄을 나타냄 */
+            text-decoration: underline;
+        }
+        
+        #header>ul>li:hover a {
+            /* 글자 색상 */
+            color: red;
+        }
+        /* li 태그 중에서 4번째 li 태그 */
+        
+        #header>ul>li:nth-child(4) {
+            /* 바깥쪽 왼쪽 여백 */
+            margin-left: 70px;
+            /* 바깥쪽 오른쪽 여백 */
+            margin-right: 70px;
+            /* 바깥쪽 상단 여백 */
+            margin-top: 0px;
+        }
+        
+        #main_picture {
+            /* 가로 넓이 */
+            width: 100%;
+            /* 세로 높이 */
+            height: 464px;
+            /*  높이만큼 보여짐 */
+            overflow: hidden;
+            /* 배경 이미지 */
+            background-image: url(picture01.png);
+            /* 배경 이미지 반복 여부 */
+            background-repeat: no-repeat;
+            /* 배경 이미지 스크롤에 따른 이동 */
+            background-attachment: scroll;
+            /* 배경 이미지 사이즈 */
+            background-size: 100% 464px;
+            /* 안쪽 그림자 효과 css3generator.com */
+            -webkit-box-shadow: inset 3px 2px 25px 10px rgba(0, 0, 0, 0.8);
+            box-shadow: inset 3px 2px 25px 10px rgba(0, 0, 0, 0.8);
+        }
+        /* 텍스트 박스 */
+        /* 텍스트박스 실제  높이 패딩 20 + 패딩 20 + 줄 간격 60 + 줄 간격 72 + 버튼 40 = 212  */
+        
+        #main_picture>div {
+            /* 가로 넓이 */
+            width: 400px;
+            /* 줄 간격 */
+            line-height: 30px;
+            /* 안쪽 상단 여백 */
+            padding-top: 20px;
+            /* 안쪽 하단 여백 */
+            padding-bottom: 20px;
+            /*  높이만큼 늘어남 */
+            overflow: hidden;
+            /* 464 전체 높이 - 212 실제 높이 = 252에서 2로 나눈값 = 126px */
+            /* block 속성 가운데 정렬 */
+            margin: 126px auto;
+            /* 배경 색상 */
+            background-color: beige;
+            /* 글자 정렬 */
+            text-align: center;
+        }
+        /*  높이60 */
+        /* div 안의 p 태그 중에서 첫 번째 p 태그 */
+        
+        #main_picture>div>p:nth-of-type(1) {
+            /* 글자 크기 */
+            font-size: 14px;
+        }
+        
+        #main_picture>div>p:nth-of-type(1)>span {
+            /* 글자 굵기 */
+            font-weight: 900;
+            /* 글자 크기 */
+            font-size: 24px;
+        }
+        /*  높이72 */
+        /* div 안의 p 태그 중에서 두 번째 p 태그 */
+        
+        #main_picture>div>p:nth-of-type(2) {
+            /* 글자 크기 */
+            font-size: 12px;
+            /* 줄 간격 */
+            line-height: 24px;
+        }
+        /*  높이 40 */
+        /* input 태그 중에서 속성이 submit 속성을 가지고 있는 선택자 */
+        
+        #main_picture>div>input[type=submit] {
+            /* 테두리 없음 */
+            border: none;
+            /* 가로 넓이 */
+            width: 120px;
+            /* 세로 높이 */
+            height: 40px;
+            /* 커서의 포인터를 변경 */
+            cursor: pointer;
+        }
+        /* input 태그 중에서 속성이 submit 속성을 가지고 있는 선택자 중에서 첫 번째 선택자 */
+        
+        #main_picture>div>input[type=submit]:nth-of-type(1) {
+            /* 배경 색상 */
+            background-color: white;
+        }
+        /* input 태그 중에서 속성이 submit 속성을 가지고 있는 선택자 중에서 두 번째 선택자 */
+        
+        #main_picture>div>input[type=submit]:nth-of-type(2) {
+            /* 배경 색상 */
+            background-color: orange;
+            /* 글자 색상 */
+            color: white;
+        }
+        /* icon 텍스트 박스 4개 */
+        
+        .icon_title_text {
+            /* 줄 간격 */
+            line-height: 26px;
+            /* 글자 정렬 */
+            text-align: center;
+            /* 높이만큼 늘어남 */
+            overflow: hidden;
+            /* 바깥쪽 상단 여백 */
+            margin-top: 30px;
+            /* 바깥쪽 하단 여백 */
+            margin-bottom: 30px;
+            /* 글자 크기 */
+            font-size: 10px;
+        }
+        
+        .icon_title_text>span {
+            /* 글자 크기 */
+            font-size: 20px;
+            /* 글자 굵기 */
+            font-weight: 700;
+            /* 줄 간격 */
+            line-height: 24px;
+        }
+        
+        .icon_box>p {
+            /* 가로 넓이 */
+            width: 250px;
+            /* 높이만큼 늘어남 */
+            overflow: hidden;
+            /* 안쪽 상단 여백 */
+            padding-top: 30px;
+            /* 안쪽 하단 여백 */
+            padding-bottom: 30px;
+            /* 왼쪽 기준 정렬 */
+            float: left;
+            /* 글자 정렬 */
+            text-align: center;
+            /* 바깥쪽 왼쪽 여백 */
+            margin-left: 30px;
+            /* 바깥쪽 오른쪽 여백 */
+            margin-right: 30px;
+            /* 글자 크기 */
+            font-size: 14px;
+            /* 테두리 하단 스타일 */
+            border-bottom: 2px dotted gray;
+        }
+        
+        .icon_box>p>img {
+            /* 속성 변경 */
+            display: inline-block;
+        }
+        
+        .icon_box {
+            /* 가로 넓이 */
+            width: 1240px;
+            /* 높이만큼 늘어남 */
+            overflow: hidden;
+            /* block 속성일 때 가운데 정렬 */
+            margin: 10px auto;
+        }
+        
+        .chefs {
+            /* 가로 넓이 */
+            width: 100%;
+            /* 세로 높이 */
+            height: 304px;
+            /* 배경 색상 */
+            background-color: #ececec;
+            /* 높이만큼만 보여짐 */
+            overflow: hidden;
+            /* 바깥쪽 상단 여백 */
+            margin-top: 30px;
+            /* 바깥쪽 하단 여백 */
+            margin-bottom: 30px;
+        }
+        
+        .chefs>div {
+            /* 가로 넓이 */
+            width: 814px;
+            /* 세로 높이 */
+            height: 304px;
+            /* 배경 색상 */
+            background-color: #ececec;
+            /* 높이만큼 보여짐 */
+            overflow: hidden;
+            /* block 속성일 때 가운데 정렬 */
+            margin: 0px auto;
+        }
+        
+        .chefs>div>p {
+            /* 왼쪽 기준 정렬 */
+            float: left;
+            /* 가로 넓이 */
+            width: 500px;
+            /* 줄 간격 */
+            line-height: 26px;
+            /* 바깥쪽 상단 여백 */
+            margin-top: 80px;
+        }
+        
+        .chefs>div>p>span {
+            /* 글자 크기 */
+            font-size: 26px;
+            /* 글자굵기 */
+            font-weight: 600;
+        }
+        
+        .chefs>div>img {
+            /* 왼쪽 기준 정렬 */
+            float: left;
+        }
+        
+        .icon_box>p:hover {
+            /* 테두리 스타일 */
+            border: 4px solid orange;
+            /* 마우스를 올렸을 때 테두리 스타일이 지정되기에 테두리 값을 박스의  넓이와  높이에 포함시킴 */
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+
+<body>
+    
+    <!--상단 부분-->
+    <div id="header">
+        <ul>
+            <li><a href="#">How it works</a></li>
+            <li><a href="#">Gifts</a></li>
+            <li><a href="#">About</a></li>
+            <li>
+                <a href="#"><img src="logo.png" alt="대체 이미지"></a>
+            </li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Members</a></li>
+            <li>
+                <a href="#"><img src="top_icon.png" alt="대체 이미지"></a>
+            </li>
+        </ul>
+    </div>
+
+    <!--메인 이미지-->
+    <div id="main_picture">
+
+        <!--공지 박스-->
+        <div>
+            <p>RECLAIM
+                <br> <span>DINNERTIME</span>
+            </p>
+            <p>
+                Fresh ingredients. Chef-made.
+                <br> Delivered. Ready when you are.
+                <br> Enter Your ZIP Code To View Our Menu
+            </p>
+            <input type="submit" value="ZIP CODE">
+            <input type="submit" value="See Menu">
+        </div>
+
+    </div>
+
+    <!--텍스트 문단-->
+    <p class="icon_title_text">
+        "WHAT'S FOR DINNER?"
+        <br>
+        <span>
+        FINALLY HAS AN<br> EASY ANSWER
+        </span>
+    </p>
+
+    <!--icon 글자 박스 4개-->
+    <div class="icon_box">
+        <p>
+            <img src="icon1.png" alt="대체 이미지">
+            <br>Chef-Made Meals Our chefs use fresh, seasonal ingredients to make affordable, tasty, nourishing meals.
+        </p>
+        <p>
+            <img src="icon2.png" alt="대체 이미지">
+            <br>Chef-Made Meals Our chefs use fresh, seasonal ingredients to make affordable, tasty, nourishing meals.
+        </p>
+        <p>
+            <img src="icon3.png" alt="대체 이미지">
+            <br>Chef-Made Meals Our chefs use fresh, seasonal ingredients to make affordable, tasty, nourishing meals.
+        </p>
+        <p>
+            <img src="icon4.png" alt="대체 이미지">
+            <br>Chef-Made Meals Our chefs use fresh, seasonal ingredients to make affordable, tasty, nourishing meals.
+        </p>
+
+    </div>
+
+    <!--쉐프-->
+    <div class="chefs">
+        <div>
+            <p>
+                <span>MEET OUR CHEF</span>
+
+                <br> Munchery chefs come from top restaurant kitchens. They bring mad skills, tons of passion, and expertise in a delicious array of cuisines. They insist, as we do, on using only the freshest seasonal ingredients.
+            </p>
+            <img src="human.png" alt="대체 이미지">
+        </div>
+    </div>
+
+</body>
+</html>

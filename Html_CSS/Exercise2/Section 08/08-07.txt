@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Keat</title>
+    <style>
+        .bullet_circle {
+            list-style: circle;
+        }
+         .bullet_none {
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+     <!--블릿 변경하기-->
+    <ul class="bullet_circle">
+        <li>회사소개</li>
+        <li>생산설비</li>
+        <li>제품소개</li>
+        <li>온라인문의</li>
+        <li>커뮤니티</li>
+    </ul>    
+    <!--블릿 없애기-->
+    <ul class="bullet_none">
+        <li>회사소개</li>
+        <li>생산설비</li>
+        <li>제품소개</li>
+        <li>온라인문의</li>
+        <li>커뮤니티</li>
+    </ul>    
+</body>
+</html>

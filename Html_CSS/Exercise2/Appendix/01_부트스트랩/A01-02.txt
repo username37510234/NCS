@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Keat</title>
+    
+    <!--모바일 뷰 포트-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimun-scale=1.0" />
+    <!--부트스트랩 css 파일-->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!--제이쿼리 파일 연결-->
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+    <!--부트스트랩 스크립트 파일-->
+    <script src="js/bootstrap.js"></script>
+
+    <style>
+        /* 부트스트랩에서 줄을 시작할 때 붙여야 하는 클래스 값 */
+        .row {
+            margin-bottom: 15px;
+        }
+        
+        /* 데스크톱 992px 이상 화면에서 3column씩을 한 묶음으로 구성 */
+        .col-md-3 {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            background-color: orange;
+            border: 2px solid black;
+        }
+        
+        /* 데스크톱 992px 이상 화면에서 6column씩을 한 묶음으로 구성 */
+        .col-md-6 {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            background-color: orange;
+            border: 2px solid black;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <h1>부트스트랩 가변그리드</h1>
+
+    <div class="container">
+
+        <div class="row">
+            <!--column 3묶음씩 4개로 구성 = 12column-->
+            <div class="col-md-3">col-md-3</div>
+            <div class="col-md-3">col-md-3</div>
+            <div class="col-md-3">col-md-3</div>
+            <div class="col-md-3">col-md-3</div>
+        </div>
+
+        <div class="row">
+            <!--column 6묶음씩 2개로 구성 = 12column-->
+            <div class="col-md-6">col-md-6</div>
+            <div class="col-md-6">col-md-6</div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

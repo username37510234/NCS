@@ -1,0 +1,29 @@
+ /* 코드 추가 부분 */
+        /* 아이디 graph에 마우스를 올렸을 때 바로 아래에 있는 클래스 box의 순번대로 스타일 지정 */
+        #graph:hover>.box:nth-child(1) {
+            background-color: red;
+            width:100px;
+        }
+        #graph:hover>.box:nth-child(2) {
+            background-color: green;
+            width:400px;
+        }
+        #graph:hover>.box:nth-child(3) {
+            background-color:blueviolet;
+            width:200px;
+        }
+        #graph:hover>.box:nth-child(4) {
+            background-color:dodgerblue;
+            width:300px;
+        }
+        #graph:hover>.box:nth-child(5) {
+            background-color:brown;
+            width:500px;
+        }
+        
+        
+        .box{
+        /* 반응하는 클래스 box의 배경 색상은 각각 1초동안 변화하고 가로 넓이는 5초동안 반응함 */
+            transition-property: background-color,width;
+            transition-duration: 1s, 5s;
+        }

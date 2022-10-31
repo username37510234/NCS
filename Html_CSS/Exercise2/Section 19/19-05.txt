@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Keat</title>
+    <style>
+        /* 기본 스타일 */
+        
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        li {
+            /* 항목 태그의 기본 블릿 아이콘을 없앰 */
+            list-style: none;
+        }
+        
+        a {
+            / *링크 속성의 글자 꾸밈은 지정하지 않음 */
+            text-decoration: none;
+        }
+        
+        /* 전체 상단 */
+        header {
+            /* 넓이 */
+            width: 100%;
+            /* 높이 */
+            height: 46px;
+            /* 배경 이미지 */
+            background-image: url(header_background.png);
+            /* 배경 이미지의 가로 반복 */
+            background-repeat: repeat-x;
+            /* 상대 좌표 */
+            position: relative;
+            /* 높이만큼 보여짐 */
+            overflow: hidden;
+        }
+        
+        /* h1 태그의 로고 부분 */
+        .logo {
+            /* 넓이 */
+            width: 100px;
+            /* 높이 */
+            height: 32px;
+            /* 줄 간격 */
+            line-height: 32px;
+            /* block 속성일 때 가운데 배치 */
+            margin: 7px auto;
+            /* 높이만큼 보여짐 */
+            overflow: hidden;
+            /* 글자 정렬 */
+            text-align: center;
+            /* 글꼴 */
+            font-family: 'tahoma';
+            /* 글자 색상 */
+            color:white;
+        }
+        
+        /* 왼쪽 Button */
+        .left {
+            /* 절대 좌표 */
+            position: absolute;
+            /* top으로부터의 위치 */
+            top: 7px;
+            /* left로부터의 위치 */
+            left: 10px;
+            /* 가로 넓이는 이미지기준 */
+            width: 62px;
+            /* 세로 높이는 이미지 기준 */
+            height: 32px;
+            /* 배경 색상은 배경 이미지를 넣기 전에 공간을 확인하기 위함 */
+            background-color: green;
+            /* 속성 변경 */
+            display: block;
+            /*이미지를 볼 수 없는 환경에서도 내용을 이해할 수 있게 하여 웹 접근성을 보장함 */
+            font-size: 0;
+            /* 배경 이미지를 스프라이트 이미지로 활용 */
+            background-image: url(sprites.png);            
+        }
+        
+        /* 오른쪽 햄버거 메뉴 */
+        .right {
+            /* 절대 좌표 */
+            position: absolute;
+            /* 가로 넓이는 이미지 기준 */
+            width: 32px;
+            /* 세로 높이는 이미지 기준 */
+            height: 32px;
+            /* right로부터의 위치 */
+            right: 10px;
+            /* top으로부터의 위치 */
+            top: 7px;
+            /* 배경 색상은 배경 이미지를 넣기 전에 공간을 확인하기 위함 */
+            background-color: green;
+            /* 속성 변경 */
+            display: block;
+            /* 글자를 실제 코드상에서는 입력한 이유는 코드에서의 빠른 확인을 위해서 입력을 하였습니다. 실행결과에서는 글자가 보이면 안됩니다. 그렇기에 글자사이즈를 0으로 처리*/
+            font-size: 0;
+            /*배경이미지를 스프라이트 이미지로 활용*/
+            background-image: url(sprites.png);
+            /*이미지를 볼 수 없는 환경에서도 내용을 이해할 수 있게 하여 웹 접근성을 보장함 */
+            background-position: -62px 0;
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+
+    <header>
+
+        <a href="#" class="left">left</a>
+        <h1 class="logo">LOGO</h1>
+        <a href="#" class="right">right</a>
+
+    </header>
+
+
+</body>
+
+</html>

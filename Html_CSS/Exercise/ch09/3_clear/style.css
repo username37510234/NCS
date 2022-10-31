@@ -1,0 +1,39 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: yellow
+}
+
+#left {
+    float: left;
+    width: 150px;
+    height: 200px;
+    background-color: blue
+}
+
+#right {
+    float: right;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+
+section {
+    float: left;
+    width: 400px;
+    height: 200px;
+    background-color: orange;
+}
+
+footer {
+    clear: both;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+}

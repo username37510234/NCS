@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>pre 태그</title>
+</head>
+<body>
+
+    <!--아래 예문은 pre 태그의 의미를 이해하기 위한 예문입니다. 실제 웹 접근성 부분에서는
+    h1 태그가 들어갈 수 없습니다.-->
+    <!--실제 웹 접근성에서 pre 태그는 소리를 지원해주는 기계일 경우 pre 태그 부분을 
+    건너뛰기 때문에 웹 접근성에서는 대체 텍스트를 넣거나 사용 시 고려를 해야 합니다.-->
+
+    <pre>
+    <h1>Imagine</h1>
+    </pre>
+
+    <pre>
+     Imagine
+   
+     Imagine there's no heaven It's easy if you try 
+     No hell below us Above us only sky Imagine all the people  
+    </pre>
+
+</body>
+</html>

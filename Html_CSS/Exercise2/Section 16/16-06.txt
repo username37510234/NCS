@@ -1,0 +1,14 @@
+/* 스타일 시트 이어서 입력 */
+/* 애니메이션 시작 */
+        section {
+            animation: rint 3s linear 0s infinite;
+        }        
+        @keyframes rint{
+            from{
+                transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+            }
+            to{
+                transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+            }
+        }
+    </style>

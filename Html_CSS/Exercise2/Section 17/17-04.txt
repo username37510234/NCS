@@ -1,0 +1,11 @@
+       #graph:hover .box {
+            width: 500px;
+        }
+        
+    /* 코드 추가 부분 */
+        /* delay 속성 추가로 지정 */
+        .box:nth-child(1){transition-delay: 0s;} /* 지연값 없음 */
+        .box:nth-child(2){transition-delay: 1s;} /* 1초후 동작 */
+        .box:nth-child(3){transition-delay: 2s;} /* 2초후 동작 */
+        .box:nth-child(4){transition-delay: 3s;} /* 3초후 동작 */
+        .box:nth-child(5){transition-delay: 4s;} /* 4초후 동작 */        

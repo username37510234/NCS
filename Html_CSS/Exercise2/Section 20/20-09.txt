@@ -1,0 +1,30 @@
+/* 화면 넓이가 320px부터는 div 박스의 가로 넓이값을 100%로 지정 */        
+        @media screen and (min-width:320px) {
+            #wrap div {
+                width: 100%;
+            }            
+        }
+        
+        /* 화면 넓이가 768px부터는 div 박스의 가로 넓이값을 50%로 지정
+           마지막 박스는 넓이를 100%로 지정 */        
+        @media screen and (min-width:768px) {
+            #wrap div {
+                width: 50%;
+            }
+            #wrap div:last-child {
+                width: 100%;
+            }
+            
+        }        
+        /* 화면 넓이가 1024px부터는 div 박스의 가로 넓이값을 20%로 지정
+           마지막 박스는 넓이 20%로 지정 */        
+        @media screen and (min-width:1024px) {
+            #wrap div {
+                width: 20%;
+            }
+            #wrap div:last-child {
+                width: 20%;
+            }            
+        }      
+    </style>
+

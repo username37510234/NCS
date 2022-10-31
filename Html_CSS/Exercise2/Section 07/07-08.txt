@@ -1,0 +1,33 @@
+<style>
+    div {
+        width: 300px;
+        /* 넓이 */
+        height: 300px;
+        /* 높이 */
+        border: 10px solid black;
+        /* 테두리 스타일 */
+        padding: 30px;
+        /* 안쪽 여백 공통 지정 */
+    }
+    
+    .box1 {
+        box-sizing: border-box;
+        /* 박스의 테두리와 여백을 박스의 넓이와 높이에 포함 */
+    }
+    
+    .box2 {
+        box-sizing: content-box;
+        /* 기본값과 동일 */
+    }
+</style>
+</head>
+
+<body>
+    
+    <!--border-box-->
+    <div class="box1">01</div>
+    <!--content-box-->
+    <div class="box2">02</div>
+    
+</body>
+</html>

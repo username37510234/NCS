@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>스타일시트</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        background: #000000;
+        color: white;
+    }
+    /* 배경 색상은 블랙 */
+</style>
+</head>
+<body>
+
+   <h4>Artwork Concept Drawing</h4>
+   <h1>아트웍 컨셉 드로잉</h1>
+   <p>
+   편집 포트폴리오에 포함될 수 있는 북커버 및 동화책 삽화 제작
+   </p>
+
+</body>
+</html>
+

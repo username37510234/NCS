@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>정적인 레이아웃</title>
+
+    <style>
+
+        .wrapper {
+            width: 960px;
+            margin: 0 auto;
+        }
+
+        header, footer {
+            width: 960px;
+        }
+
+        nav, section {
+            float: left;
+        }
+
+        footer {
+            clear: both;
+        }
+
+        nav {
+            width: 200px;
+            margin-right: 10px;
+        }
+
+        section {
+            width: 750px;
+        }
+
+        *, *:before, *:after {
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #fff;
+            color: black;
+            text-align: center;
+            margin: 0;
+        }
+
+        header,
+        nav,
+        section,
+        footer {
+            border: 1px solid black;
+            margin-bottom: 10px;
+            border-radius: 3px;
+        }
+
+        header, footer {
+            padding: 20px 0;
+        }
+
+        nav, section {
+            padding: 200px 0;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <h1>정적인 레이아웃</h1>
+        <header>HEADER</header>
+        <nav>NAV</nav>
+        <section>SECTION</section>
+        <footer>FOOTER</footer>
+
+    </div>
+
+</body>
+</html>

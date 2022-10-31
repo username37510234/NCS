@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">    
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Keat</title>
+    <style>
+        td,
+        th {
+            border: 2px solid black;
+            /* 테두리 스타일 */
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>
+        <caption>col 태그에 대한 예시</caption>
+        <colgroup>
+            <!--2개의 열을 묶어서 스타일을 지정한 예시-->
+            <col span="2" style="background-color:red">
+            <!--별다른 스타일을 지정하지 않고 열의 개수를 맞추기 위한 col 태그-->
+            <col>
+        </colgroup>
+        <tr>
+            <th>ISBN</th>
+            <th>Title</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>3476896</td>
+            <td>My first HTML</td>
+            <td>$53</td>
+        </tr>
+    </table>
+
+</body>
+</html>

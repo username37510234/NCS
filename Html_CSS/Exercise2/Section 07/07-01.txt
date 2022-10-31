@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Keat</title>
+    <style>
+        .camera {
+            float: left;
+            /* 해당 요소를 왼쪽으로 배치하여 글자를 정렬 */
+            /* float:right일 경우 이미지 요소가 오른쪽으로 정렬 */
+            /* float:none은 정렬하지 않음 */
+        }
+    </style>
+</head>
+
+<body>
+    
+    <img src="img/camera01.png" class="camera"> 
+    <h2>TITLE-1</h2>
+    <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    </p>
+    
+</body>
+</html>

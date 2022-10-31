@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">   
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Keat</title>
+    <style>
+        li {
+            border: 2px solid black; /* 테두리 스타일 */
+        }        
+        .v_menu {
+            list-style: none;  /* 목록 항목의 스타일 기호를 없앰 */
+        }        
+        .h_menu {
+            display: inline;   /* inline 속성으로 변경 */
+        }
+    </style>
+</head>
+
+<body>  
+    
+    <!--속성을 변경하지 않은 세로 메뉴-->
+    <ul>
+        <li class="v_menu">세로메뉴01</li>
+        <li class="v_menu">세로메뉴02</li>
+        <li class="v_menu">세로메뉴03</li>
+        <li class="v_menu">세로메뉴04</li>
+    </ul>    
+    <!--inline 속성으로 변경된 가로 메뉴-->
+    <ul>
+        <li class="h_menu">가로메뉴01</li>
+        <li class="h_menu">가로메뉴02</li>
+        <li class="h_menu">가로메뉴03</li>
+        <li class="h_menu">가로메뉴04</li>
+    </ul>
+    
+</body>
+</html>

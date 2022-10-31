@@ -1,0 +1,15 @@
+h1 {
+    color: red;
+}
+#bg{
+    background-color: yellow;
+}
+#color{
+    color: violet;
+}
+.size{
+    font-size: 50px;
+}
+.color{
+    color:blue;
+}

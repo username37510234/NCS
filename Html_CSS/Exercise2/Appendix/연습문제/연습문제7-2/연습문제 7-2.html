@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <title>연습문제 7-2</title>
+    <style>
+        /* 초기화 기본 스타일 시트 */
+        
+        * {
+            margin: 0;
+            padding: 0;
+        }        
+        a {  /* 링크 속성 글자 밑줄 없앰 */
+            text-decoration: none;
+        }        
+        li {  /* 항목 태그 블릿 아이콘 장식 없앰 */
+            list-style: none;
+        }        
+        img {  /* inline 속성을 지니고 있는 img 태그의 오차 간격을 없애기 위한 속성 변경 */
+            display: block;
+            /* img 태그의 모든 테두리선은 없음으로 초기화 */
+            border: none;
+        }        
+        body {  /* 글자 크기 */
+            font-size: 14px;
+            /* 줄 간격 */
+            line-height: 23px;
+            /* 글꼴 */
+            font-family: '맑은고딕', 'Arial';
+            /* 글자 색상 */
+            color: black;
+        }        
+        
+        h2,h3 {  /* h2, h3 태그에 각각 적용 */  
+            margin-bottom: 15px;
+        }
+        
+        /*---전체 레이아웃 구조를 아이디 선택자로 지정---*/ 
+        
+        /* 상단 메인 */
+        #top {
+            /* 가로 넓이 */
+            width: 1000px;
+            /* 높이만큼 같이 늘어남 */
+            overflow: hidden;
+            /* block 형태의 가운데 정렬 */
+            margin: 0 auto;
+        }
+        
+        /* 텍스트 박스 전체 레이아웃 */
+        #box_all {
+            /* 가로 넓이 */
+            width: 1000px;
+            /* 높이만큼 같이 늘어남 */
+            overflow: hidden;
+            /* block 형태의 가운데 정렬 */
+            margin: 0 auto;
+        }
+        
+        /* 하단 */
+        #footer {
+            /* 가로 넓이 */
+            width: 1000px;
+            /* 세로 높이 */
+            height: 40px;
+            /* block 형태의 가운데 정렬 */
+            margin: 0 auto;
+            /* 높이만큼 같이 늘어남 */
+            overflow: hidden;
+        }        
+        
+        /*---#top---*/
+        
+        /* left 박스 */        
+        .top_left {
+            /* 가로 넓이 */
+            width: 750px;
+            /* 세로 높이 */
+            height: 500px;
+            /* 높이만큼 같이 늘어남 */
+            overflow: hidden;
+            /* 배경 이미지 적용 */
+            background-image: url("img/0320-1.jpg");
+            /* 배경 이미지 반복 여부 */
+            background-repeat: no-repeat;
+            /* 배경 이미지 스크롤에 따른 고정 유무 */
+            background-attachment: scroll;
+            /* 왼쪽 기준 정렬 */
+            float: left;
+        }
+        
+        /* left 박스 안의 텍스트 박스 */        
+        .top_box {
+            /* 가로 넓이 */
+            width: 210px;
+            /* 세로 높이 */
+            height: 210px;
+            /* 바깥쪽 상단 여백 */
+            margin-top: 250px;
+            /* 안쪽 여백 공통 적용 */
+            padding: 20px;
+            /* 높이만큼 같이 늘어남 */
+            overflow: hidden;
+        }
+        
+        /* right 박스 */        
+        .top_right {
+            /* 가로 넓이 */
+            width: 250px;
+            /* 세로 높이 */
+            height: 500px;
+            /* 왼쪽 기준 정렬 */
+            float: left;
+            /* 배경 색상 */
+            background-color: yellow;
+            /* 높이만큼 같이 늘어남 */
+            overflow: hidden;
+        }
+        
+        /*---#box_all---*/
+        
+        /* left 박스 */        
+        .box_left {
+            /* 가로 넓이 */
+            width: 750px;
+            /* 세로 높이 */
+            height: 500px;
+            /* 왼쪽 기준 정렬 */
+            float: left;
+            /* 배경 색상 */
+            background-color: gray;
+            /* 높이만큼 같이 늘어남 */
+            overflow: hidden;
+        }
+        
+        /* right 박스 */        
+        .box_right {
+            /* 가로 넓이 */
+            width: 210px;
+            /* 세로 높이 */
+            height: 460px;
+            /* 배경 색상 */
+            background-color: yellow;
+            /* 높이만큼 같이 늘어남 */
+            overflow: hidden;
+            /* 왼쪽 기준 정렬 */
+            float: left;
+            /* 안쪽 여백 공통 적용 */
+            padding: 20px;
+        }
+        
+        /*.box공통 스타일 */        
+        .box {
+            /* 가로 넓이 */
+            width: 210px;
+            /* 세로 높이 */
+            height: 210px;
+            /* 왼쪽 기준 정렬 */
+            float: left;
+            /* 안쪽 여백 공통 적용 */
+            padding: 20px;
+        }
+        
+        /* 짝수 번째 박스 */        
+        .box:nth-child(2n) {
+            /* 배경 색상 */
+            background-color: #ffd800;
+            /* 글자 색상 */
+            color: black;
+        }
+        
+        /* 홀수 번째 박스 */        
+        .box:nth-child(2n+1) {
+            /* 배경 색상 */
+            background-color: #ff0000;
+            /* 글자 색상 */
+            color: white;
+        }
+        
+        /*---#footer---*/
+        
+        /* left 박스 */ 
+        .f_left {
+            /* 가로 넓이 */
+            width: 750px;
+            /* 세로 높이 */
+            height: 40px;
+            /* 왼쪽 기준 정렬 */
+            float: left;
+            /* 배경 색상 */
+            background-color: gray;
+        }
+        
+        /* 하단 메뉴 */
+        .f_left ul {
+            /* clear:both와 같은 역할 */
+            overflow: hidden;
+            /* 바깥쪽 왼쪽 여백 */
+            margin-left: 20px;
+        }
+        
+        .f_left li {
+            /* 왼쪽 기준 정렬 */
+            float: left;
+            /* 바깥쪽 왼쪽여백 */
+            margin-left: 10px;
+            /* 바깥쪽 오른쪽 여백 */
+            margin-right: 10px;
+            /* 글자 크기 */
+            font-size: 12px;
+            /* 글자 줄 간격 */
+            line-height: 40px;
+        }
+        
+        /* li 태그 중에 짝수 번째 li 태그의 글자 색상 */
+        .f_left li:nth-child(2n) {
+            color:darkorange;
+        }
+        
+        .f_left li a {
+            /* 글자 색상 */
+            color: white;
+        }
+        
+        .f_left li:hover a {
+            /* 글자 색상 */
+            color:yellow;
+        }
+        
+        /* right 박스 */ 
+        .f_right {
+            /* 가로 넓이 */
+            width: 250px;
+            /* 세로 높이 */
+            height: 40px;
+            /* 왼쪽 기준 정렬 */
+            float: left;
+            /* 배경 색상 */
+            background-color: black;
+            /* 글자 색 상*/
+            color: white;
+            /* 글자 가운데 정렬 */
+            text-align: center;
+            /* 줄 간격*/
+            line-height: 40px;
+        }
+        
+        .f_right select {
+            /* 가로 넓이 */
+            width: 200px;
+            /* 세로 높이 */
+            height: 30px;
+            /* 배경 색상 */
+            background: black;
+            /* 글자 색상 */
+            color: white;
+            /* 글자 가운데 정렬 */
+            text-align: center;
+            /* 줄 간격 */
+            line-height: 30px;
+            /* 테두리 없음 */
+            border: none;
+            /* 배경 색상 */
+            background-color: cadetblue;
+            /* block 속성 위아래 간격은 5px, 좌우는 가운데 정렬 */
+            margin: 5px auto;
+            /* 왼쪽 안쪽 여백 */
+            padding-left: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!--상단-->
+    <div id="top">
+        <div class="top_left">
+            <div class="top_box">
+                <h2>
+                    GLOBAL<br>
+                    BUSINESS
+                </h2>
+                <p>
+                    GLOBAL No.1 lifestyle,Media Shopping Leader<br> 
+                    라이프스타일을 선도하는 세계최고의 미디어 쇼핑리더
+                </p>
+            </div>
+        </div>
+        <div class="top_right">
+            <img src="img/0320-2.jpg" alt="대체이미지">
+            <img src="img/0320-3.jpg" alt="대체이미지">
+        </div>
+    </div>
+
+    <!--가운데-->
+    <div id="box_all">
+
+        <div class="box_left">
+            <div class="box">
+                <h3>CSV</h3>
+                <p>
+                    상생 이념을 통해 함께 성장하고<br> 
+                    사회에 공헌하는 CSV프로그램과<br>
+                    활동소식을 안내합니다.<br>
+                </p>
+            </div>
+            <div class="box">
+                <h3>입점안내</h3>
+                <p>
+                    고객에게 늘 새롭고 Trendy한 제안을 하는 CJ O Shopping! 힘찬도약을 함께 할 동반자를 찾습니다.
+                </p>
+            </div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+            <div class="box">6</div>
+        </div>
+
+        <div class="box_right">
+            7
+        </div>
+    </div>
+
+    <!--하단-->
+    <div id="footer">
+        <div class="f_left">
+            <ul>
+                <li><a href="#">법적고지</a></li>
+                <li>|</li>
+                <li><a href="#">이메일무단수집거부</a></li>
+                <li>|</li>
+                <li><a href="#">이용약관</a></li>
+                <li>|</li>
+                <li><a href="#">개인정보취급방침</a></li>
+                <li>|</li>
+                <li><a href="#">고객센터</a></li>
+                <li>|</li>
+                <li><a href="#">입찰공고</a></li>
+            </ul>
+        </div>
+        <div class="f_right">
+            <form>
+                <select>
+                    <option>cj그룹계열사바로가기</option>
+                </select>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

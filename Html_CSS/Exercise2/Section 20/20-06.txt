@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>가변 그리드로 변환</title>
+    <style>
+        /* 기본 스타일 */
+        
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* 화면 넓이 0부터 767px까지 */        
+        @media screen and (max-width:767px) {
+            html {
+                /* 배경 색상 */
+                background-color: red;
+                /* 글자 색상 */
+                color: white;
+                /* 글자 굵기 */
+                font-weight: 900;
+            }
+        }
+        
+        /* 화면 넓이 768px부터 959px까지 */        
+        @media screen and (min-width:768px) and (max-width:959px) {
+            html {
+                /* 배경 색상 */
+                background-color: green;
+                /* 글자 색상 */
+                color: white;
+                /* 글자 굵기 */
+                font-weight: 900;
+            }
+        }
+        
+        /* 화면 넓이 960px부터 */        
+        @media screen and (min-width:960px) {
+            html {
+                /* 배경 색상 */
+                background-color: blue;
+                /* 글자 색상 */
+                color: white;
+                /* 글자 굵기 */
+                font-weight: 900;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Lorem Ipsum </h1>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">    
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>연습문제 9</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        img {
+            /* 속성 변경 */
+            display: block;
+        }
+        
+        header {
+            /* 배경 색상 */
+            background-color: #444749;
+            /* 줄 간격 */
+            line-height: 100px;
+            /* 글자 정렬 */
+            text-align: center;
+            /* 글자 크기 */
+            font-size: 30px;
+            /* 글자 색상 */
+            color: white;
+        }
+        
+        #container {
+            /* width: 1250px; */
+            /* (1250 / 1900) x 100 = 65.78% */
+            /* 가로 넓이 */
+            width: 65.78%;
+            /* 높이만큼 늘어남 */
+            overflow: hidden;
+            /* block 속성일 때 가운데 정렬 */
+            margin: 0 auto;
+            /* 상대 위치 */
+            position: relative;
+        }
+        
+        .box {
+            /* 가로 넓이 */
+            width: 20%;
+            /* 높이만큼 늘어남 */
+            overflow: hidden;
+            /* 왼쪽 기준 정렬 */
+            float: left;
+        }
+        
+        .box>img {
+            /* 가변 이미지 가로 넓이 */
+            max-width: 100%;
+            /* 이미지만큼 자동으로 높이가 늘어남 */
+            height: auto;
+        }
+        
+        @media screen and (max-width:1200px) {
+            /* 브라우저 넓이가 0부터 1200px 크기까지의 조건 */
+            .box {
+                /* 가로 넓이 */
+                width: 33.33%;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>Color Paletter</header>
+    <div id="container">
+        <div class="box"><img src="color01.jpg" alt=" 색상"></div>
+        <div class="box"><img src="color02.jpg" alt=" 색상"></div>
+        <div class="box"><img src="color03.jpg" alt=" 색상"></div>
+        <div class="box"><img src="color04.jpg" alt=" 색상"></div>
+        <div class="box"><img src="color05.jpg" alt=" 색상"></div>
+        <div class="box"><img src="color06.jpg" alt=" 색상"></div>
+        <div class="box"><img src="color07.jpg" alt=" 색상"></div>
+        <div class="box"><img src="color08.jpg" alt=" 색상"></div>
+        <div class="box"><img src="color09.jpg" alt=" 색상"></div>
+        <div class="box"><img src="color10.jpg" alt=" 색상"></div>
+        <div class="box"><img src="color01.jpg" alt=" 색상"></div>
+        <div class="box"><img src="color02.jpg" alt=" 색상"></div>
+        <div class="box"><img src="color03.jpg" alt=" 색상"></div>
+        <div class="box"><img src="color04.jpg" alt=" 색상"></div>
+        <div class="box"><img src="color05.jpg" alt=" 색상"></div>
+        <div class="box"><img src="color06.jpg" alt=" 색상"></div>
+        <div class="box"><img src="color07.jpg" alt=" 색상"></div>
+        <div class="box"><img src="color08.jpg" alt=" 색상"></div>
+        <div class="box"><img src="color09.jpg" alt=" 색상"></div>
+        <div class="box"><img src="color10.jpg" alt=" 색상"></div>
+    </div>
+
+</body>
+</html>

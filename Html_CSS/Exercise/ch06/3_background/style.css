@@ -1,0 +1,8 @@
+.background {
+    width: 500px;
+    height: 500px;
+    background-color: yellow;
+    background-image: url(rice.png);
+    background-repeat: no-repeat;
+    background-position: 40px 100px;
+}

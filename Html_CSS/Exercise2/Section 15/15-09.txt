@@ -1,0 +1,28 @@
+.prev {
+            /* top으로의 위치 */
+            top: 50%;
+            /* left로의 위치 */
+            left: 10px;
+            /* 바깥쪽 상단 여백 */
+            margin-top: -60px;
+        }
+        
+        .next {
+            /* top으로의 위치 */
+            top: 50%;
+            /* left로의 위치 */
+            right: 10px;
+            /* 바깥쪽 상단 여백 */
+            margin-top: -60px;
+        }
+        
+        .play {
+            /* top으로의 위치 */
+            top: 50%;
+            /* left로의 위치 */
+            left: 50%;
+            /* 바깥쪽 상단 여백 */
+            margin-top: -60px;
+            /* 바깥쪽 왼쪽 여백 */
+            margin-left: -60px;
+        }

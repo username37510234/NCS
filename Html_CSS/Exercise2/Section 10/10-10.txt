@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Keat</title>
+    <style>
+        div {
+            width: 300px;
+            height: 200px; 
+            background: radial-gradient(ellipse at center, #398235 0%, #ffffff 51%, #c9de96 100%);
+            /* 모양 at 위치, 색상1(위치), 색상2(위치), 색상3(위치)*/
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
+

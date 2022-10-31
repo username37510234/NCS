@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>이미지 태그</title>
+</head>
+<body>
+
+   <!--경로에 맞게 불러온 이미지-->
+   <img src="img/camera01.png" alt="카메라1">
+
+   <!--경로에 맞지 않게 불러온 이미지-->
+   <img src="camera02.png" alt="카메라2">
+
+   <!--넓이 옵션을 적용한 이미지-->
+   <img src="img/camera03.png" alt="카메라3" width="600">
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">   
+    <title>Keat</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        #wrap {
+            /* 절대 좌표 */
+            position: absolute;
+            /* 넓이 */
+            width: 200px;
+            /* 높이 */
+            height: 200px;
+            /* 테두리 라운드 모양 */
+            border-radius: 100px;
+            /* 글자 정렬 */
+            text-align: center;
+            /* 그레이디언트 배경 - colorzilla.com */
+            background: linear-gradient(to bottom, rgba(135, 224, 253, 1) 0%, rgba(83, 203, 241, 1) 40%, rgba(5, 171, 224, 1) 100%);
+            
+            /* 애니메이션의 동작을 지정 */
+            /* 애니메이션 이름 지정 - rint */
+            animation-name: rint;
+            /* 애니메이션을 몇 초 동안 재생할지 지정 */
+            animation-duration: 2s;
+            /* 수치 변형 함수를 지정. 애니메이션 속도의 변화 */
+            animation-timing-function: linear;
+        }
+        
+        #wrap>h1 {
+            /* 줄 간격 */
+            line-height: 200px;
+        }
+        
+        /* 애니메이션의 각 키프레임의 변화되는 부분 */
+        /* 애니메이션 rint의 키프레임과 변화되는 움직임 */
+        @keyframes rint {
+            /* 애니메이션이 10초라고 가정하면 0초 시점*/
+            from {
+                /* 왼쪽 좌표 */
+                left: 0px;
+                /* 변형 속성 : 각도 0도에서 시작 */
+                transform: rotate(0deg);
+            }
+            /* 애니메이션이 10초라고 가정하면 5초 시점 */
+            50% {
+                /* 왼쪽 좌표 */
+                left: 500px;
+            }
+            /* 애니메이션이 10초라고 가정하면 10초 시점 */
+            to {
+                /* 왼쪽 좌표 */
+                left: 500px;
+                /* 변형 속성 : 각도 360도에서 끝 */
+                transform: rotate(360deg);
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div id="wrap">
+        <h1>animation</h1>
+    </div>
+
+</body>
+</html>
+
+

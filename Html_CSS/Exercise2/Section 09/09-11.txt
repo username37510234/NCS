@@ -1,0 +1,22 @@
+<style>
+        /* input 태그의 type 속성값이 checkbox인 태그가 체크 되었을 때
+          바로 뒤에 위치하는 div 태그의 height 속성에 0픽셀을 적용 */        
+        input[type=checkbox]:checked + div {
+            height: 0px;
+        }
+        
+        div {
+            overflow: hidden; /* 박스의 높이만큼만 보이도록 함.*/
+            width: 650px; /* 넓이*/
+            height: 300px; /* 높이 */
+            background: yellow; /* 배경 색상 */ 
+    </style>
+<body>
+    <input type="checkbox" />
+    <div>
+        <h1>Lorem Ipsum</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+        </p>
+    </div>
+</body>
+</html>

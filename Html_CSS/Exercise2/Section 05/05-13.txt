@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>스타일시트</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        #title1 {
+            color: green;
+        }
+        /* 글자 색상 */
+        
+        #title2 {
+            color: blue;
+        }
+        /* 글자 색상 */
+        
+        #title3 {
+            color: orange;
+        }
+        /* 글자 색상 */
+        
+        #title4 {
+            color: red;
+        }
+        /* 글자 색상 */
+        
+        #title5 {
+            color: gray;
+        }
+        /* 글자 색상 */
+        
+        #title6 {
+            color: green;
+        }
+        /* 글자 색상 */
+    </style>
+
+</head>
+<body>
+    
+    <h1 id="title1">웹디자인</h1>
+    <h2 id="title2">스마트폰 웹디자인</h2>
+    <h3 id="title3">웹기획</h3>
+    <h4 id="title4">웹프로그래밍</h4>
+    <h5 id="title5">웹퍼블리쉬</h5>
+    <h6 id="title6">제이쿼리</h6>
+    
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>동적인 레이아웃</title>
+
+    <style>
+
+        .wrapper {
+            width: 100%;
+        }
+
+        nav, section {
+            float: left;
+        }
+
+        nav {
+            width: 20.83333%;
+            margin-right: 1.041667%;
+        }
+
+        section {
+            width: 78.125%;
+        }
+
+        footer {
+            clear: both;
+        }
+
+        *, *:before, *:after {
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #fff;
+            color: black;
+            text-align: center;
+            margin: 0;
+        }
+
+        header,
+        nav,
+        section,
+        footer {
+            border: 1px solid black;
+            margin-bottom: 10px;
+            border-radius: 3px;
+        }
+
+        header, footer {
+            padding: 20px 0;
+        }
+
+        nav, section {
+            padding: 200px 0;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="wrapper">
+        <h1>동적인 레이아웃</h1>
+        <header>HEADER</header>
+        <nav>NAV
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum natus vitae quasi, vero, incidunt rem.</p>
+        </nav>
+        <section>SECTION
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum quis debitis blanditiis illo sunt dolorum dolore, saepe, adipisci architecto totam, tempore modi qui nemo deleniti nesciunt alias. Quaerat molestias pariatur eum iste placeat esse a laudantium labore facere, rem reiciendis reprehenderit omnis qui ipsam voluptatem dolor doloribus dolorem vel debitis?</p>
+        </section>
+        <footer>FOOTER</footer>
+    </div>
+
+</body>
+</html>

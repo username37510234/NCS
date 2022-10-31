@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+   
+    <title> Keat </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }        
+        .style_num01 {
+            list-style-type: lower-alpha;
+            list-style-position: inside;
+        }            
+    </style>
+</head>
+<body>
+    <ol class="style_num01">
+        <li>회사소개</li>
+        <li>생산설비</li>
+        <li>제품소개</li>
+        <li>온라인문의</li>
+        <li>커뮤니티</li>
+    </ol>  
+</body>
+</html>

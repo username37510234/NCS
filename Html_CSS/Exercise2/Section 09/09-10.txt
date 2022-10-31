@@ -1,0 +1,33 @@
+<style>
+       input:enabled {
+            /* 입력을 할 수 있는 상태의 input 태그의 배경 색상과 글자 색상 지정*/
+            background: blue;
+            color: white;
+        }
+        
+        input:disabled {
+            /* 입력을 할 수 없는 상태의 input 태그의 배경 색상 지정 */
+            background: black;
+        }
+        
+        input:focus {
+            /* input 태그의 입력을 위한 초점이 맞추어진 상태에서의 배경 색상 지정 */
+            background: orange;
+        }
+</style>
+<body>
+ <!--입력을 할 수 있는 상태-->
+    <h1>enabled</h1>
+    <p>
+        <input type="text" />
+    </p>
+
+    <!--입력을 할 수 없는 상태-->
+    <h1>disabled</h1>
+
+    <p>입력을 할수 없는 상태로 만들기
+        <input disabled="disabled" />
+    </p>
+</body>
+</html>
+

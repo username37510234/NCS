@@ -1,0 +1,35 @@
+<style>
+        /*-----------웹 문서 제작 시 초기화 스타일-------*/
+        
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        a {
+            /* 링크 속성 글자 밑줄 없앰 */
+            text-decoration: none;
+        }
+        
+        li {
+            /* 항목 태그 블릿 아이콘 장식 없앰 */
+            list-style: none;
+        }
+        
+        img {
+            /* inline 속성을 지니고 있는 img 태그의 오차 간격을 없애기 위한 속성 변경 */
+            display: block;
+            /* img 태그의 모든 테두리선은 없음으로 초기화  */
+            border: none;
+        }
+        
+        body {
+            /* 글꼴 */
+            font-family: 'Verdana';
+            /* 글자 크기 */
+            font-size: 14px;
+            /* 글자 색상 */
+            color: black;
+            /* 줄 간격 */
+            line-height: 28px;
+             }

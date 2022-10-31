@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Keat </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }        
+        body {
+            background-image: url(art.jpg);
+            /* 배경 이미지를 적용하는 기본 방식 */
+            background-size: 100%;
+            /* 배경 이미지 사이즈 100%는 브라우저의 가로 길이를 기준으로 100% */
+            background-repeat: no-repeat;
+            /* 배경 이미지의 초기 반복 값은 가로, 세로 모두 반복
+              no-repeat은 반복하지 않음
+              repeat-x는 가로 반복
+              repeat-y는 세로 반복
+            */
+        }
+
+    </style>
+</head>
+
+<body>
+
+</body>
+</html>
+
+
+

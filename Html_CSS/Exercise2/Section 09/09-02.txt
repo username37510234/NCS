@@ -1,0 +1,16 @@
+<style>
+        /* 여러 태그들을 한 번에 선택해 스타일 속성을 적용할때 쉼표사용 */
+        body,p,h1,h2,h3,h4,h5,h6 { 
+            border:5px solid gray;     /* 테두리 스타일 */
+        }
+</style>
+<body>
+    <h1>Lorem ipsum</h1>
+    <h2>Lorem ipsum</h2>
+    <h3>Lorem ipsum</h3>
+    <h4>Lorem ipsum</h4>
+    <h5>Lorem ipsum</h5>
+    <h6>Lorem ipsum</h6>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+</body>
+</html>

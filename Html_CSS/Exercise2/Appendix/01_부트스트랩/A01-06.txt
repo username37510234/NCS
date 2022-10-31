@@ -1,0 +1,28 @@
+<body>
+    
+    <!--부트스트랩 시작-->
+    <div class="container">
+        <!--줄의 시작-->
+        <div class="row">
+            <!--column의 시작, column은 12개로 한 줄에 구성-->
+            <div class="col-lg-2">
+                <h4>부트스트랩을 정복하자</h4>
+                <h1>bootstrap</h1>
+            </div>
+            <div class="col-lg-6 col-lg-push-4">
+                <h3>push:밀어냄</h3>
+                <h3>pull:당김</h3>
+            </div>
+            <div class="col-lg-4 col-lg-pull-6">
+                <ul>
+                    <li>MENU-1</li>
+                    <li>MENU-2</li>
+                    <li>MENU-3</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+
+</body>

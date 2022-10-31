@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>목록 태그</title>
+</head>
+<body>
+
+<!--순서가 없는 목록 태그 예문-->
+     <ul>
+       <li>짜장면 </li>
+       <li>짬뽕</li>
+       <li>울면</li>
+       <li>야끼우동</li>
+     </ul>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!--하단-->
+    <footer>
+
+        <!--카피라이트 부분-->
+        <div>
+            <img src="img/footer_logo.png" alt="이미지 대체 텍스트">
+            <p>
+                서울특별시 서초구 서초대로77길 3 / 대표전화 02-530-8556<a href="#">개인정보처리방침</a>
+                <br>
+                <span>Copyright ⓒ 야구발전전시관</span>
+            </p>
+            <div>
+                <img src="img/icon_f.png" alt="이미지 대체 텍스트">
+                <img src="img/icon_b.png" alt="이미지 대체 텍스트">
+                <select>
+                    <option>관련사이트</option>
+                </select>
+            </div>
+        </div>
+
+    </footer>

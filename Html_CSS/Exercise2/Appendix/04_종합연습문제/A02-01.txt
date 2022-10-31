@@ -1,0 +1,35 @@
+ <style>
+        /* 기본 스타일 */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        li {
+            list-style: none;
+            /* 항목 태그 스타일 기호 없음 */
+        }
+        
+        a {
+            text-decoration: none;
+            /* 링크 글자 밑줄 없음 */
+        }
+        
+        img {
+            /* 이미지의 기본 속성 변경 */
+            display: block;
+            /* 테두리 없음 */
+            border: none;
+        }
+        
+        body {
+            /* 글자 크기 */
+            font-size: 14px;
+            /* 줄 간격 */
+            line-height: 26px;
+            /* 글자 색상 */
+            color: #434343;
+            /* 글꼴 */
+            font-family: '맑은고딕', 'Arial';
+        }
+        

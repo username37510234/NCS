@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Keat</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }        
+        /* 부모 박스 요소 */
+        .movie {
+            /* 넓이 */
+            width: 700px;
+            /* 높이 */
+            height: 500px;
+            /* 테두리 스타일 */
+            border: 2px solid gray;
+            /* 배경 색상 */
+            background-color: darkslateblue;
+            /* 상대 좌표 */
+            position: relative;
+        }        
+        /* 자식 박스 요소 */
+        /* 버튼 */
+        button {
+            /* 넓이 */
+            width: 120px;
+            /* 높이 */
+            height: 120px;
+            /* 줄 간격 */
+            line-height: 120px;
+            /* 라운드 테두리 */
+            border-radius: 120px;
+            /* 글자 정렬 */
+            text-align: center;
+            /* 테두리 없음 */
+            border: none;
+            /* 글자 크기 */
+            font-size: 30px;
+            /* 배경 색상 */
+            background-color: antiquewhite;
+            /* 절대 좌표 */
+            position: absolute;
+        }        
+        .prev {
+            /* top으로의 위치 */
+            top: 50%;
+            /* left로의 위치 */
+            left: 10px;           
+        }
+        
+        .next {
+            /* top으로의 위치 */
+            top: 50%;
+            /* left로의 위치 */
+            right: 10px;            
+        }        
+        .play {
+            /* top으로의 위치 */
+            top: 50%;
+            /* left로의 위치 */
+            left: 50%;           
+        }
+    </style>
+</head>
+
+<body>    
+<!--부모 요소 relative-->
+    <div class="movie">
+        <!--자식 요소 absolute-->
+        <button class="prev">PREV</button>
+        <button class="play">▶</button>
+        <button class="next">NEXT</button>
+    </div>
+</body>
+</html>

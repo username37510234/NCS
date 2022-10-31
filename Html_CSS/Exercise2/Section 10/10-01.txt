@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Keat</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }        
+        body {
+            background-color:cadetblue;
+            background-image: url(cat_bg.png);
+            /* 배경 이미지를 적용하는 기본 방식 */
+        }
+    </style>
+</head>
+<body>
+</body>
+</html>
+

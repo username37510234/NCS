@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Keat</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }        
+        div {
+            width: 100%;
+            /* 넓이 */
+            height: 100px;
+            /* 높이 */
+            margin-bottom: 10px;
+            /* 하단 바깥쪽 여백 */
+            font-size: 20px;
+            /* 글자 크기 */
+        }        
+        
+        /* 빨강(red) 색상을 예로 다양하게 표현하는 방법 */        
+        #word {
+            background: red;
+            /*배경 색상:색상 단어명*/
+        }        
+        #hex {
+            background: #ff0000;
+            /* hex 코드에서는 두 자리씩 구분해서 공통되는 항목을 한 가지로 줄여서 #f00이라고 입력해도 됨 */
+        }        
+        #rgb {
+            background: rgb(255, 0, 0);
+            /* rgb 색상 코드 */
+        }        
+        #hsl {
+            background: hsl(0, 100%, 50%);
+            /* hsl 색상 코드 */
+        }        
+        #rgba {
+            background: rgba(255, 0, 0, 0.5);
+            /* red 색상에 투명도 50%를 지정함 */
+        }        
+        #hsla {
+            background: hsla(0, 100%, 50%, 0.5);
+            /* hsl 색상에 투명도 50%를 지정함 */
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="word">word:단어로 입력하는 형식</div>
+    <div id="hex">hex:#웹 번호로 입력하는 형식</div>
+    <div id="rgb">rgb:rgb(rgb,green,blue)</div>
+    <div id="hsl">hsl:hsl(hue,saturation,lightness)</div>
+    <div id="rgba">rgba:rgb형식에서 alpha값 추가</div>
+    <div id="hsla">hsla:hsl형식에서 alpha값 추가</div>
+</body>
+</html>
+
+
+
+
+

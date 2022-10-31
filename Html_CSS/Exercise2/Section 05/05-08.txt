@@ -1,0 +1,23 @@
+﻿<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        background: #000;
+        color: white;
+    }
+    /* 배경 색상은 black */
+    
+    body {
+        font-family: '돋움';
+        font-size: 12px;
+    }
+    /* 기본 글꼴 돋움, 글자 크기 12px */
+    
+    body {
+        line-height: 30px;
+    }
+    /* 줄 간격 30px */
+</style>

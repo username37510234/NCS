@@ -1,0 +1,15 @@
+   section {
+            /* 오른쪽 기준 정렬 */
+            float: right;
+            /* 가로 넓이 (600 / 960) x 100 = 62.5 */
+            width: 62.5%;
+            /* 배경 색상 구분 */
+            background-color: darksalmon;
+        }
+/* 코드 추가 부분 */
+section>img{
+            /* 부모 요소 넓이에 맞춤 */
+            max-width: 100%;
+            /* 높이는 비율에 맞게 자동 조정 */
+            height: auto;
+        }

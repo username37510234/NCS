@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <title>모바일홈페이지 이해</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimun-scale=1.0, user-scalable=no" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>    
+    <!--모바일기기에서 바로가기 아이콘-->
+    <link rel="apple-touch-icon-precomposed" href="design_icon.png" />    
+</head>
+
+<body>    
+    <h1>모바일 첫 페이지입니다.</h1>
+    <h2>도메인 최초 접속 시 모바일로 접속했을 때의 페이지 입니다.</h2>
+</body>
+
+</html>

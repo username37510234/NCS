@@ -1,0 +1,22 @@
+@media screen and (max-width:960px) {
+
+/* 콘텐츠 내용에 대한 반응형 지정 */
+            #contents {
+                /* 실제 가로 넓이가 1140px이지만 브라우저 넓이가 960px로 줄였을 때의 균형을 맞추기 위한 80% 넓이로 지정 */
+                width: 80%;
+                /* 반응형 효과를 부드럽게 나타내기 위한 애니메이션 효과로서 브라우저를 줄이거나 늘였을때 부드럽게 0.7초만큼 반응 */
+                transition-duration: 0.7s;
+            }
+            #contents>div {
+                /* 실제 가로 넓이는 360px이지만 브라우저 넓이가 960px로 줄였을 때의 #contents 박스의 넓이 안에서 2개씩 나열하기 위한 넓이값을 마진값과 포함하여 48%로 지정함 */
+                width: 48%;
+                margin: 0;
+                margin-left: 1%;
+                margin-right: 1%;
+            }
+            #contents>div img {
+                /* 가변 그리드 안에서의 이미지는 백분율로 표시되어야 박스의 넓이와 같은 크기로 보여짐 */
+                max-width: 100%;
+                height: auto;
+            }
+

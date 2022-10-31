@@ -1,0 +1,41 @@
+<style>
+        /* 기본 스타일 */
+        
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        #wrap {
+            width: 90%; /* 넓이를 백분율로 지정 */
+            margin: 0 auto; /* 브라우저의 넓이 기준으로 가운데 배치 */
+            border: 4px solid black; /* 테두리 스타일 */
+            overflow: hidden; /* 높이만큼 늘어남 */
+        }
+        
+        #wrap div {
+            float: left; /* 왼쪽 기준 정렬 */
+            height: 100px; /* 세로 높이 */
+        }
+        
+        #wrap div:first-child { /* div의 첫 번째 div */
+            background-color: aquamarine; 
+        }
+        
+        #wrap div:nth-child(2) { /* div의 두 번째 div */
+            background-color: goldenrod;
+        }
+        
+        #wrap div:nth-child(3) { /* div의 세 번째 div */
+            background-color: yellowgreen;
+        }
+        
+        #wrap div:nth-child(4) { /* div의 네 번째 div */
+            background-color: royalblue;
+        }
+        
+        #wrap div:last-child { /* div의 마지막 번째 div */
+            background-color: mediumorchid;
+        }
+
+

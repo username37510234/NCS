@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">   
+    <title>Keat</title>
+    <style>
+        
+        /* 기본 스타일 */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        li {
+            /* 항목 태그의 기본 블릿 아이콘을 없앰 */
+            list-style: none;
+        }
+        
+        a { /* 링크 속성의 글자 꾸밈은 지정하지 않음 */
+            text-decoration: none;
+        }
+        
+        /* 전체 세로 메뉴를 포함하는 ul의 넓이 */
+        .nav {
+            /* 넓이 */
+            width: 1000px;
+            /* 높이만큼 늘어남 */
+            overflow: hidden;
+            /* 상대 좌표 */
+            position: relative;
+        }
+        
+        /* 메인 메뉴 */
+        .nav li {
+            /* 넓이 */
+            width:200px;
+            /* 글자 크기 */
+            font-size: 14px;
+            /* 배경 색상 지정 */
+            background-color: #000000;
+            /* 글자 정렬 */
+            text-align: center;
+            /* 글자 굵기 */
+            font-weight: 900;
+            /* 글자 서체 */
+            font-family: Tahoma;
+            /* 테두리 하단 스타일 */
+            border-bottom: 1px solid #808080;
+            /* 줄 간격 */
+            line-height: 40px;
+            /* 테두리 값을 넓이와 높이에 포함시킴 */
+            box-sizing: border-box;
+            /* 글자 색상 */
+            color: white;
+            /* 마우스 커서를 포인터로 변환 */
+            cursor: pointer;
+            /* 왼쪽 기준 정렬 */
+            float: left;
+        }     
+        
+        /* 서브 메뉴 항목 */
+        .submenu>li {
+            /* 글자 크기 */
+            font-size: 12px;
+            /* 배경 색상 */
+            background-color: #999999;
+            /* 줄 간격 */
+            line-height: 40px;
+            /* 테두리 스타일 */
+            border-bottom: 1px solid #777777;
+            /* 테두리 값을 넓이와 높이에 포함시킴 */
+            box-sizing: border-box;            
+        }
+                
+        .submenu li a {
+            /* 글자 색상 */
+            color: black;
+        }
+        
+        .submenu {
+            /* 높이를 0으로 지정한 이유는 서브 메뉴는 마우스 반응이 있기 전에는 보이면 안됨 */
+            height: 0;
+            /* 높이만큼 보여짐 */
+            overflow: hidden;
+            /* 자연스럽게 0.5초만큼 동작함 */
+            transition-duration: 0.5s;            
+        }
+       
+        /* 메인 메뉴 li에 마우스를 올리면 서브 메뉴 항목의 높이를 160px로 보여지게 함 */        
+        .nav li:hover .submenu {
+            height: 160px;
+        }
+        
+        /* 메인 메뉴 항목에 마우스를 올렸을 때의 글자 색상 */
+        .nav li:hover {
+            color: red;
+        }
+        
+        /* 서브 메뉴 항목에 마우스를 올렸을 때의 글자 색상과 배경 색상 */
+        .submenu li:hover {
+            background-color: burlywood;
+            color: yellow;
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+
+    <!--전체 메인 메뉴-->
+    <ul class="nav">
+        <li>MENU-1
+            <!--서브 메뉴1-->
+            <ul class="submenu">
+                <li><a href="#">menu1-1</a></li>
+                <li><a href="#">menu1-2</a></li>
+                <li><a href="#">menu1-3</a></li>
+                <li><a href="#">menu1-4</a></li>
+            </ul>
+        </li>
+
+        <li>MENU-2
+            <!--서브 메뉴2-->
+            <ul class="submenu">
+                <li><a href="#">menu2-1</a></li>
+                <li><a href="#">menu2-2</a></li>
+                <li><a href="#">menu2-3</a></li>
+                <li><a href="#">menu2-4</a></li>
+            </ul>
+        </li>
+
+        <li>MENU-3
+            <!--서브 메뉴3-->
+            <ul class="submenu">
+                <li><a href="#">menu3-1</a></li>
+                <li><a href="#">menu3-2</a></li>
+                <li><a href="#">menu3-3</a></li>
+                <li><a href="#">menu3-4</a></li>
+            </ul>
+        </li>
+        <li>MENU-4
+            <!--서브 메뉴4-->
+            <ul class="submenu">
+                <li><a href="#">menu4-1</a></li>
+                <li><a href="#">menu4-2</a></li>
+                <li><a href="#">menu4-3</a></li>
+                <li><a href="#">menu4-4</a></li>
+            </ul>
+            </li>
+            <li>MENU-5
+                <!--서브 메뉴5-->
+                <ul class="submenu">
+                    <li><a href="#">menu5-1</a></li>
+                    <li><a href="#">menu5-2</a></li>
+                    <li><a href="#">menu5-3</a></li>
+                    <li><a href="#">menu5-4</a></li>
+                </ul>
+            </li>
+
+    </ul>
+</body>
+</html>
+

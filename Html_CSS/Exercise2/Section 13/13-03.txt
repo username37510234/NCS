@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <title>Keat</title>
+    <style>
+        td, th {
+            border: 2px solid black;
+            /* 테두리 스타일 */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--표의 시작-->
+    <table>
+        <caption>표의 제목1</caption>
+        <!--행의 시작-->
+        <tr>
+            <!--열의 시작-->
+            <th>제목1</th>
+            <th>제목2</th>
+        </tr>
+        <!--행의 시작-->
+        <tr>
+            <!--열의 시작-->
+            <td>내용1</td>
+            <td>내용2</td>
+        </tr>
+        <!--행의 시작-->
+        <tr>
+            <!--열의 시작-->
+            <td>내용3</td>
+            <td>내용4</td>
+        </tr>
+    </table>
+
+</body>
+</html>
+

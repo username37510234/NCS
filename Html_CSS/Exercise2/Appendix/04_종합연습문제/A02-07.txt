@@ -1,0 +1,96 @@
+ /* contents 박스 스타일 */
+       #contents {
+            /* 가로 넓이 */
+            width: 1140px;
+            /* 높이만큼 늘어남 */
+            overflow: hidden;
+            /* 상대 위치 */
+            position: relative;
+            /* block 속성일 때 가운데 배치 */
+            margin: 40px auto;
+        }
+        
+        #contents>div {
+            /* 가로 넓이 */
+            width: 360px;
+            /* 바깥쪽 여백 */
+            margin-right: 10px;
+            margin-left: 10px;
+            margin-bottom: 20px;
+            /* 상대 위치 */
+            position: relative;
+            /* 높이만큼 늘어남 */
+            overflow: hidden;
+            /* 왼쪽 기준 정렬 */
+            float: left;
+        }
+        
+        #contents div h2 {
+            /* 글자 굵기 */
+            font-weight: 100;
+            /* 줄 간격 */
+            line-height: 42px;
+            /* 높이만큼 늘어남 */
+            overflow: hidden;
+            /* 전체 넓이와 높이에 테두리 값을 포함시킴 */
+            box-sizing: border-box;
+            /* 세로 높이 */
+            height: 42px;
+        }
+        
+        #contents div:nth-child(2) h2 {
+            /* div 중에서 2번째 div의 h2 태그의 테두리 스타일 */
+            border-bottom: 2px solid black;
+        }
+        
+        #contents div:nth-child(6) h2 {
+            /* div 중에서 6번째 div의 h2 태그의 테두리 스타 일*/
+            border-bottom: 2px solid black;
+        }
+        
+        #contents .more {
+            /* 절대 위치 */
+            position: absolute;
+            /* 오른쪽으로부터의 위치 */
+            right: 10px;
+            /* 상단으로부터의 위치 */
+            top: 14px;
+        }
+        
+        #contents>div p {
+            /* 높이만큼 늘어남 */
+            overflow: hidden;
+            /* 자간 */
+            letter-spacing: -1px;
+            /* 줄 간격 */
+            line-height: 38px;
+        }
+        
+        #contents>div:last-child p {
+            /* #contents의 마지막 번째 div 안의 p 태그에 대한 안쪽 여백 지정 */
+            padding-top: 10px;
+        }
+        
+        #contents>div p a {
+            /* 글자 색상 */
+            color: #434343;
+            /* 속성 변경 */
+            display: block;
+            /* 왼쪽 기준 정렬 */
+            float: left;
+            /* 글자 크기 */
+            font-size: 15px;
+        }
+        
+        #contents>div p span {
+            /* 글자 크기 */
+            font-size: 10px;
+            /* 글꼴 */
+            font-family: verdana;
+            /* 속성 변경 */
+            display: block;
+            /* 오른쪽 기준 정렬 */
+            float: right;
+            /* 글자 색상 */
+            color: lightgray;
+        }

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">    
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>연습문제 8</title>
+    <!--구글 웹 폰트-->
+    <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+    <style>
+        /* -----------웹 문서 제작 시 초기화 스타일------- */
+        
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        a {
+            /*  링크 속성 글자 밑줄 없앰  */
+            text-decoration: none;
+        }
+        
+        li {
+            /* 항목 태그 블릿 아이콘 장식 없앰 */
+            list-style: none;
+        }
+        
+        img {
+            /* inline 속성을 지니고 있는 img 태그의 오차 간격을 없애기 위한 속성 변경 */
+            display: block;
+            /* img 태그의 모든 테두리선은 없음으로 초기화 */
+            border: none;
+        }
+        
+        body {
+            /* 글꼴 */
+            font-family: 'Verdana';
+            /* 글자 크기 */
+            font-size: 14px;
+            /* 글자 색상 */
+            color: black;
+            /* 줄 간격 */
+            line-height: 28px;
+            /* 배경 색상 */
+            background-color: #333333;
+        }
+        /* ----------여기서부터 디자인--------- */
+        
+        /* 전체구조 */
+        #wrap {
+            /* 가로 넓이 */
+            width: 1600px;
+            /*  높이만큼 늘어남 */
+            overflow: hidden;
+            /* 상대 좌표 */
+            position: relative;
+            /* block 속성일 때 가운데 배치 */
+            margin: 0 auto;
+        }
+        
+        /* 왼쪽 영역 */        
+        .left {
+            /* 가로 넓이 */
+            width: 200px;
+            /* 세로 높이 */
+            height: 100%;
+            /* 높이만큼 보여짐 */
+            overflow: hidden;
+            /* 절대 좌표 */
+            position: fixed;
+            /* 배경 색상 */
+            background-color: #000000;
+        }
+        
+        /* 왼쪽 세부 내용 */  
+        /* 로고 */
+        .left>h1 {
+            /* 글꼴(웹 폰트 지정) */
+            font-family: 'Russo One', sans-serif;
+            /* 글자 색상 */
+            color: white;
+            /* 글자 정렬 */
+            text-align: center;
+            /* 바깥쪽 여백 */
+            margin-top: 30px;
+            /* 바깥쪽 여백 */
+            margin-bottom: 30px;
+        }
+        
+        /* 세로메뉴 */
+        .left>ul>li {
+            /* 글자 줄간격 */
+            line-height: 30px;
+            /* 가로 넓이 */
+            width: 140px;
+            /* block 속성일 때 가운데 배치 */
+            margin: 0 auto;
+            /* 바깥쪽 여백 */
+            margin-bottom: 5px;
+            /* 글자 색상 */
+            color: white;
+            /* 글자 굵기 */
+            font-weight: 800;
+        }
+                
+        .left>ul>li>a {
+            /* 글자 색상 */
+            color: gray;
+            /* 글자 크기 */
+            font-size: 13px;
+        }
+        
+        /* li 태그에 마우스를 올렸을 때 a속성의 스타일 */
+        .left>ul>li:hover a {
+            /* 글자 밑줄 */
+            text-decoration: underline;
+            /* 글자 색상 */
+            color: yellow;
+        }
+        
+        /* 장바구니 표시 부분 */
+        .left>ul>li>span {
+            /* 글자 색상 */
+            color: greenyellow;
+            /* 글자 크기 */
+            font-size: 10px;
+            /* 바깥쪽 여백 */
+            margin-left: 10px;
+        }
+        
+         /* 검색 창 묶음 */
+        .left>.search {
+            width: 160px;
+            overflow: hidden;
+            margin: 20px auto;
+        }
+        
+        /* input 태그 중에서 type 속성이 text 선택자 */
+        .left>.search>input[type="text"] {
+            /* 가로 넓이 */
+            width: 100px;
+            /* 세로 높이 */
+            height: 26px;
+            /* 배경 색상 */
+            background-color: dimgray;
+            /* 글자 색상 */
+            color: white;
+            /* 테두리 스타일 */
+            border: 1px solid gray;
+            /* 안쪽 여백 */
+            padding-left: 10px;
+            /* 안쪽 여백 */
+            padding-right: 10px;
+            /* 속성 변경 */
+            display: block;
+            /* 왼쪽 기준 정렬 */
+            float: left;
+            /* 테두리를 전체 넓이와  높이에 포함시킴 */
+            box-sizing: border-box;
+        }
+        
+        /* 상태 선택자 focus - input 태그를 활성화시켰을 때 */
+        .left>.search>input[type="text"]:focus {
+            /* 배경 색상 */
+            background-color: darkslategrey;
+            /* 외곽선 없앰 */
+            outline: none;
+        }
+        
+        /* 검색버튼 */
+        .left>.search>button {
+            /* 가로 넓이 */
+            width: 60px;
+            /* 세로 높이 */
+            height: 26px;
+            /* 배경 색상 */
+            background-color: black;
+            /* 글자 색상 */
+            color: gray;
+            /* 테두리 스타일 */
+            border: 1px solid gray;
+            /* 속성 변경 */
+            display: block;
+            /* 왼쪽 기준 정렬 */
+            float: left;
+            /* 테두리를 전체 넓이와  높이에 포함시킴 */
+            box-sizing: border-box;
+            /* 글자 크기 */
+            font-size: 10px;
+        }
+       
+        /* 오른쪽 영역 */        
+        .right {
+            /* 가로 넓이 */
+            width: 1400px; 
+            /* 높이만큼 늘어남 */
+            overflow: hidden;
+            /* 상대 좌표 */
+            position: relative;
+            /* 오른쪽 기준 정렬 */
+            float: right;
+            /* 배경 색상 */
+            background-color: #ffd800;
+        }
+        
+        /* 메인 이미지 */
+        .right>.main {
+            /* 가로 넓이 */
+            width: 1200px;
+            /* 세로 높이 */
+            height: 399px;
+            /* 높이만큼 보여짐 */
+            overflow: hidden;
+            /* block 속성일 때 가운데 배치 */
+            margin: 30px auto;
+            /* 상대 좌표 */
+            position: relative;
+        }
+        
+        /* 가운데 버튼 */
+        .right>.main>button{
+            width:150px;
+            height: 150px;
+            border-radius: 150px;
+            line-height: 150px;
+            text-align: center;
+            background-color: black;
+            color:white;
+            font-size: 30px;
+            position: absolute;
+            top:50%;
+            left:50%;
+            margin-left: -75px;
+            margin-top: -75px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        /* 제품 이미지 묶음 */
+        .right>.product {
+            /* 가로 넓이 */
+            width: 1200px;
+            /* 높이만큼 늘어남 */
+            overflow: hidden;
+             /* block 속성일 때 가운데 배치 */
+            margin: 30px auto;
+            /* 상대 좌표 */
+            position: relative;
+        }
+        
+        /* 제품 이미지 */
+        .right>.product>img {
+            /* 왼쪽 기준 정렬 */
+            float: left;
+            /* 바깥쪽 여백 */
+            margin-left: 25px;
+            margin-right: 25px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            /* Drop Shadow 그림자 효과 - css3generator.com */
+               -webkit-box-shadow: 3px 3px 2px 10px rgba(0, 0, 0, 0.2);
+               box-shadow: 3px 3px 2px 2px rgba(0, 0, 0, 0.2);
+        }
+
+    </style>
+</head>
+
+<body>
+    
+    <!--전체 박스-->
+    <div id="wrap">
+        
+        <!--왼쪽 고정 메뉴-->
+        <div class="left">
+            <h1>1987<br>DESIGN</h1>
+            <ul>
+                <li>MEMBER</li>
+                <li><a href="#">LOGIN</a></li>
+                <li><a href="#">JOIN US</a></li>
+                <li><a href="#">CART</a><span>(OITEM)</span></li>
+                <li><a href="#">ORDER</a></li>
+                <li><a href="#">MY PAGE</a></li>
+
+                <li>CATEGORY</li>
+                <li><a href="#">OUTER</a></li>
+                <li><a href="#">TOP</a></li>
+                <li><a href="#">BOTTOM</a></li>
+                <li><a href="#">ACC</a></li>
+                <li><a href="#">SALE</a></li>
+                <li><a href="#">TODAY VIEW</a></li>
+
+                <li>BOARD</li>
+                <li><a href="#">NOTICE</a></li>
+                <li><a href="#">REVIEW</a></li>
+                <li><a href="#">Q&A</a></li>
+            </ul>
+
+            <div class="search">
+                <input type="text">
+                <button>SEARCH</button>
+            </div>
+        </div>
+
+        <!--오른쪽 상품 리스트-->
+        <div class="right">
+            <div class="main">
+                <img src="main_pic.jpg" alt="대체 이미지">
+                <button>▶</button>
+            </div>
+
+            <div class="product">
+                <img src="bn1.jpg" alt="대체이미지">
+                <img src="bn2.jpg" alt="대체이미지">
+                <img src="bn3.jpg" alt="대체이미지">
+                <img src="bn4.jpg" alt="대체이미지">
+                <img src="bn5.jpg" alt="대체이미지">
+                <img src="bn6.jpg" alt="대체이미지">
+                <img src="bn7.jpg" alt="대체이미지">
+                <img src="bn8.jpg" alt="대체이미지">
+                <img src="bn9.jpg" alt="대체이미지">
+                <img src="bn10.jpg" alt="대체이미지">
+                <img src="bn11.jpg" alt="대체이미지">
+                <img src="bn12.jpg" alt="대체이미지">
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

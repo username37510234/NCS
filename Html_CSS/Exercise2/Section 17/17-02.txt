@@ -1,0 +1,17 @@
+/* 클래스 box의 기본 스타일 지정 */
+        .box {
+            /* 넓이 */
+            width: 200px;
+            /* 높이 */
+            height: 200px;
+            /* 상대 좌표 */
+            position: relative;
+            /* 배경 색상 */
+            background-color: green;
+       
+       /* 추가 코드 */
+       
+            /* 반응하는 선택자에 지정 */
+            /* 2초만큼 반응. 여기서 2s는 2초를 나타냄. 0.7s라고 하면 0.7초만큼 반응함 */
+            transition-duration: 2s;            
+        }

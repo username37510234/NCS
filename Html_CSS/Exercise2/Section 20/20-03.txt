@@ -1,0 +1,2 @@
+<!- - 브라우저의 넓이가 줄어들어 이미지가 section 영역을 벗어나는 경우- - >
+<section><img src="img/pen.png" alt="대체 이미지"></section>

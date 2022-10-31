@@ -1,0 +1,470 @@
+/* ````````````````````````````````````````````
+인트로
+.............................................*/
+#intro .introWrap .lion {
+    -webkit-animation: spinLion 1500ms linear infinite alternate;
+    -moz-animation: spinLion 1500ms linear infinite alternate;
+    animation: spinLion 1500ms linear infinite alternate;
+}
+
+@-webkit-keyframes spinLion {
+    from { transform: rotate(-10deg);}
+    to { transform: rotate(10deg);}
+}
+@-moz-keyframes spinLion {
+    from { transform: rotate(-10deg);}
+    to { transform: rotate(10deg);}
+}
+@keyframes spinLion {
+    from { transform: rotate(-10deg);}
+    to { transform: rotate(10deg);}
+}
+
+#intro .introWrap .rabbit {
+    -webkit-animation: spinRabbit 1000ms linear infinite alternate;
+    -moz-animation: spinRabbit 1000ms linear infinite alternate;
+    animation: spinRabbit 1000ms linear infinite alternate;
+}
+
+@-webkit-keyframes spinRabbit {
+    from { transform: rotate(0deg);}
+    to { transform: rotate(5deg);}
+}
+
+@-moz-keyframes spinRabbit {
+    from { transform: rotate(0deg);}
+    to { transform: rotate(5deg);}
+}
+
+@keyframes spinRabbit {
+    from { transform: rotate(0deg);}
+    to { transform: rotate(5deg);}
+}
+
+#intro .introWrap .bear {
+    -webkit-animation: spinBear 1000ms linear infinite alternate;
+    -moz-animation: spinBear 1000ms linear infinite alternate;
+    animation: spinBear 1000ms linear infinite alternate;
+}
+
+@-webkit-keyframes spinBear {
+    from { transform: rotate(10deg);}
+    to { transform: rotate(-10deg);}    
+}
+
+@-moz-keyframes spinBear {
+    from { transform: rotate(10deg);}
+    to { transform: rotate(-10deg);}    
+}
+
+@keyframes spinBear {
+    from { transform: rotate(10deg);}
+    to { transform: rotate(-10deg);}    
+}
+
+#intro .introWrap .monkey {
+    -webkit-animation: spinMonkey 800ms linear infinite alternate;
+    -moz-animation: spinMonkey 800ms linear infinite alternate;
+    animation: spinMonkey 800ms linear infinite alternate;
+}
+
+@-webkit-keyframes spinMonkey {
+    from { transform: rotate(20deg);}
+    to { transform: rotate(50deg);}    
+}
+
+@-moz-keyframes spinMonkey {
+    from { transform: rotate(20deg);}
+    to { transform: rotate(50deg);}    
+}
+
+@keyframes spinMonkey {
+    from { transform: rotate(20deg);}
+    to { transform: rotate(50deg);}    
+}
+
+#intro .cloudWrap .dragonfly {
+    -webkit-animation: flyDragonfly linear 7s infinite normal;
+    -moz-animation: flyDragonfly linear 7s infinite normal;
+    animation: flyDragonfly linear 7s infinite normal;
+}
+
+@-webkit-keyframes flyDragonfly {
+    from { left: -366px;}
+    to { left: 110%;}    
+}
+
+@-moz-keyframes flyDragonfly {
+    from { left: -366px;}
+    to { left: 110%;}    
+}
+
+@keyframes flyDragonfly {
+    from { left: -366px;}
+    to { left: 110%;}    
+}
+
+/* ````````````````````````````````````````````
+농장3
+.............................................*/
+
+#farm3 .machineWrap .timer {
+    -webkit-animation: rotateTimer 10000ms linear infinite;
+    -moz-animation: rotateTimer 10000ms linear infinite;
+    animation: rotateTimer 10000ms linear infinite;
+}
+
+@-webkit-keyframes rotateTimer {
+    from { transform: rotate(0deg);}
+    to { transform: rotate(360deg);}
+}
+
+@-moz-keyframes rotateTimer {
+    from { transform: rotate(0deg);}
+    to { transform: rotate(360deg);}
+}
+
+@keyframes rotateTimer {
+    from { transform: rotate(0deg);}
+    to { transform: rotate(360deg);}
+}
+
+#farm3 .machineWrap .saw1 {
+    -webkit-animation: rotateLeftSaw 10000ms linear infinite;
+    -moz-animation: rotateLeftSaw 10000ms linear infinite;
+    animation: rotateLeftSaw 10000ms linear infinite;
+}
+
+@-webkit-keyframes rotateLeftSaw {
+    from { transform: rotate(360deg);}
+    to { transform: rotate(0deg);}
+}
+
+@-moz-keyframes rotateLeftSaw {
+    from { transform: rotate(360deg);}
+    to { transform: rotate(0deg);}
+}
+
+@keyframes rotateLeftSaw {
+    from { transform: rotate(360deg);}
+    to { transform: rotate(0deg);}
+}
+
+#farm3 .machineWrap .saw2 {
+    -webkit-animation: rotateRightSaw 10000ms linear infinite;
+    -moz-animation: rotateRightSaw 10000ms linear infinite;
+    animation: rotateRightSaw 10000ms linear infinite;
+}
+
+@-webkit-keyframes rotateRightSaw {
+    from { transform: rotate(0deg);}
+    to { transform: rotate(360deg);}
+}
+
+@-moz-keyframes rotateRightSaw {
+    from { transform: rotate(0deg);}
+    to { transform: rotate(360deg);}
+}
+
+@keyframes rotateRightSaw {
+    from { transform: rotate(0deg);}
+    to { transform: rotate(360deg);}
+}
+
+/* ````````````````````````````````````````````
+숲1
+.............................................*/
+#forest1 .treeWrap .rabbit1 {
+    -webkit-animation: spinRabbitOne 1000ms linear infinite alternate;
+    -moz-animation: spinRabbitOne 1000ms linear infinite alternate;
+    animation: spinRabbitOne 1000ms linear infinite alternate;
+}
+
+@-webkit-keyframes spinRabbitOne {
+    from { transform: rotate(0deg);}
+    to { transform: rotate(10deg);}
+}
+
+@-moz-keyframes spinRabbitOne {
+    from { transform: rotate(0deg);}
+    to { transform: rotate(10deg);}
+}
+
+@keyframes spinRabbitOne {
+    from { transform: rotate(0deg);}
+    to { transform: rotate(10deg);}
+}
+
+#forest1 .treeWrap .rabbit2 {
+    -webkit-animation: spinRabbitTwo 1000ms linear infinite alternate;
+    -moz-animation: spinRabbitTwo 1000ms linear infinite alternate;
+    animation: spinRabbitTwo 1000ms linear infinite alternate;
+}
+
+@-webkit-keyframes spinRabbitTwo {
+    from { transform: rotate(0deg);}
+    to { transform: rotate(10deg);}
+}
+
+@-moz-keyframes spinRabbitTwo {
+    from { transform: rotate(0deg);}
+    to { transform: rotate(10deg);}
+}
+
+@keyframes spinRabbitTwo {
+    from { transform: rotate(0deg);}
+    to { transform: rotate(10deg);}
+}
+
+/* ````````````````````````````````````````````
+숲2
+.............................................*/
+#forest2 .machineWrap2 .machineLeft {
+    -webkit-animation: moveLeft 1s linear infinite alternate;
+    -moz-animation: moveLeft 1s linear infinite alternate;
+    animation: moveLeft 1s linear infinite alternate;
+}
+
+@-webkit-keyframes moveLeft {
+    from { left: 50px;}
+    to { left: 0;}
+}
+
+@-moz-keyframes moveLeft {
+    from { left: 50px;}
+    to { left: 0;}
+}
+
+@keyframes moveLeft {
+    from { left: 50px;}
+    to { left: 0;}
+}
+
+#forest2 .machineWrap2 .machineRight {
+    -webkit-animation: moveRight 1s linear infinite alternate;
+    -moz-animation: moveRight 1s linear infinite alternate;
+    animation: moveRight 1s linear infinite alternate;
+}
+
+@-webkit-keyframes moveRight {
+    from { left: -50px;}
+    to { left: 0;}
+}
+
+@-moz-keyframes moveRight {
+    from { left: -50px;}
+    to { left: 0;}
+}
+
+@keyframes moveRight {
+    from { left: -50px;}
+    to { left: 0;}
+}
+
+/* ````````````````````````````````````````````
+숲3
+.............................................*/
+#forest3 .forest3Wrap .smallBird {
+    -webkit-animation: spinSmallbird 1000ms linear infinite alternate;
+    -moz-animation: spinSmallbird 1000ms linear infinite alternate;
+    animation: spinSmallbird 1000ms linear infinite alternate;
+}
+
+@-webkit-keyframes spinSmallbird {
+    from { transform: rotate(0deg);}
+    to { transform: rotate(10deg);}
+}
+
+@-moz-keyframes spinSmallbird {
+    from { transform: rotate(0deg);}
+    to { transform: rotate(10deg);}
+}
+
+@keyframes spinSmallbird {
+    from { transform: rotate(0deg);}
+    to { transform: rotate(10deg);}
+}
+
+#forest3 .forest3Wrap .bigBird {
+    -webkit-animation: spinBigbird 1000ms linear infinite alternate;
+    -moz-animation: spinBigbird 1000ms linear infinite alternate;
+    animation: spinBigbird 1000ms linear infinite alternate;
+}
+
+@-webkit-keyframes spinBigbird {
+    from { transform: rotate(-10deg);}
+    to { transform: rotate(10deg);}
+}
+
+@-moz-keyframes spinBigbird {
+    from { transform: rotate(-10deg);}
+    to { transform: rotate(10deg);}
+}
+
+@keyframes spinBigbird {
+    from { transform: rotate(-10deg);}
+    to { transform: rotate(10deg);}
+}
+
+/* ````````````````````````````````````````````
+과학
+.............................................*/
+#science .scienceWrap .gly {
+    -webkit-animation: spinGly 1500ms linear infinite alternate;
+    -moz-animation: spinGly 1500ms linear infinite alternate;
+    animation: spinGly 1500ms linear infinite alternate;
+}
+
+@-webkit-keyframes spinGly {
+    from { transform: rotate(0deg);}
+    to { transform: rotate(50deg);}
+}
+
+@-moz-keyframes spinGly {
+    from { transform: rotate(0deg);}
+    to { transform: rotate(50deg);}
+}
+
+@keyframes spinGly {
+    from { transform: rotate(0deg);}
+    to { transform: rotate(50deg);}
+}
+
+#science .scienceWrap .water {
+    -webkit-animation: spinWater 1500ms linear infinite alternate;
+    -moz-animation: spinWater 1500ms linear infinite alternate;
+    animation: spinWater 1500ms linear infinite alternate;
+}
+
+@-webkit-keyframes spinWater {
+    from{ transform: rotate(0deg);}
+    to { transform: rotate(-50deg);}
+}
+
+@-moz-keyframes spinWater {
+    from{ transform: rotate(0deg);}
+    to { transform: rotate(-50deg);}
+}
+
+@keyframes spinWater {
+    from{ transform: rotate(0deg);}
+    to { transform: rotate(-50deg);}
+}
+
+/* ````````````````````````````````````````````
+밤1
+.............................................*/
+#night1 .starWrap .star1,
+#night1 .starWrap .star2,
+#night1 .starWrap .star3 {
+    -webkit-animation: pulseStar 1s linear infinite alternate;
+    -moz-animation: pulseStar 1s linear infinite alternate;
+    animation: pulseStar 1s linear infinite alternate;
+}
+
+@-webkit-keyframes pulseStar {
+    from { transform: scale(1);}
+    to { transform: scale(0.8);}    
+}
+
+@-moz-keyframes pulseStar {
+    from { transform: scale(1);}
+    to { transform: scale(0.8);}    
+}
+
+@keyframes pulseStar {
+    from { transform: scale(1);}
+    to { transform: scale(0.8);}    
+}
+
+/* ````````````````````````````````````````````
+밤2
+.............................................*/
+#night2 .moon{
+    -webkit-animation: moveMoon 10s linear infinite;
+    -moz-animation: moveMoon 10s linear infinite;
+    animation: moveMoon 10s linear infinite;
+}
+
+@-webkit-keyframes moveMoon {
+    0% { margin-left: -135px;}
+    100% { margin-left: 110%;}
+}
+
+@-moz-keyframes moveMoon {
+    0% { margin-left: -135px;}
+    100% { margin-left: 110%;}
+}
+
+@keyframes moveMoon {
+    0% { margin-left: -135px;}
+    100% { margin-left: 110%;}
+}
+
+/* ````````````````````````````````````````````
+아침
+.............................................*/
+#morning .sun {
+    -webkit-animation: moveSun 10s 1500ms linear infinite;
+    -moz-animation: moveSun 10s 1500ms linear infinite;
+    animation: moveSun 10s 1500ms linear infinite;
+}
+
+@-webkit-keyframes moveSun {
+    from { margin-left: -131px;}
+    to { margin-left: 110%;}
+}
+
+@-moz-keyframes moveSun {
+    from { margin-left: -131px;}
+    to { margin-left: 110%;}
+}
+
+@keyframes moveSun {
+    from { margin-left: -131px;}
+    to { margin-left: 110%;}
+}
+
+/* ````````````````````````````````````````````
+부엌
+.............................................*/
+.bubble1 {
+    -moz-animation-name: bubble1-keyframes;
+    -moz-animation-duration: 1000ms;
+    -moz-animation-delay: 0ms;
+    -moz-animation-fill-mode: forwards;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    -moz-transform-origin: 0 0;
+    -webkit-animation-name: bubble1-keyframes;
+    -webkit-animation-duration: 1000ms;
+    -webkit-animation-delay: 0ms;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-transform-origin: 0 0;
+    animation-name: bubble1-keyframes;
+    animation-duration: 1000ms;
+    animation-delay: 0ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transform-origin: 0 0;
+  }
+  @-moz-keyframes bubble1-keyframes {
+    0% {-moz-transform:translate(0px, 0px);}
+    50% {-moz-transform:translate(-86.6025px, -150px);}
+    100% {-moz-transform:translate(-100px, -300px);}
+  }
+  @-webkit-keyframes bubble1-keyframes {
+    0% {-webkit-transform:translate(0px, 0px);}
+    50% {-webkit-transform:translate(-86.6025px, -150px);}
+    90% {-webkit-transform:translate(-99.4987px, -270px);}
+    100% {-webkit-transform:translate(-100px, -300px);}
+  }
+  @keyframes bubble1-keyframes {
+    0% {transform:translate(0px, 0px);}
+    50% {transform:translate(-86.6025px, -150px);}
+    100% {transform:translate(-100px, -300px);}
+  }html::after { content: url(https://ga-beacon.appspot.com/UA-42910121-1/stylie?pixel); position: absolute; left: -999em; }
+  /* https://jeremyckahn.github.io/stylie/ 를 통해서 만듦 */

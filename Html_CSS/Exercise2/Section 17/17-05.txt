@@ -1,0 +1,8 @@
+ /* 코드 추가 부분 */
+        /*transition-timing-function : 속도의 변화 지정*/
+        .box:nth-child(1){transition-timing-function: linear;}
+        .box:nth-child(2){transition-timing-function: ease;}
+        .box:nth-child(3){transition-timing-function: ease-in;}
+        .box:nth-child(4){transition-timing-function: ease-in-out;}
+        .box:nth-child(5){transition-timing-function: ease-out;}
+       

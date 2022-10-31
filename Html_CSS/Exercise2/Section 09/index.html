@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {  /* 모든 태그의 글자 색상은 red이며 글자 크기는 15px입니다. */
+            color: red;                
+            font-size: 15px;            
+        }        
+        /* 여러 태그들을 한 번에 선택해 스타일 속성을 적용할때 쉼표사용 */
+        body,p,h1,h2,h3,h4,h5,h6 { 
+            border:5px solid gray;     /* 테두리 스타일 */
+        }
+        #header {
+               /* 아이디 선택자 header */
+               width: 300px;   /* 넓이 */
+               line-height: 50px;   /* 줄 간격 */
+               background-color: green;   /* 배경 색상 */
+               text-align: center;   /* 가운데 정렬 */
+               color: white;   /* 글자 색상 */
+           }        
+           .box {   /* 클래스 선택자 box */
+               border: 4px dotted gray;   /*테두리 스타일 지정 */
+           }
+           div>h1 {
+                /* 자손 개념 css 문법 */
+                background-color: blue;
+            }        
+            div  h1 {
+                /* 후손 개념 css 문법 */
+                background-color: blue;
+            }
+            
+            /* 후손 개념의 div 아래에 있는 모든 span */        
+            div  span {
+                background-color: yellow;
+            }
+            
+            /* 자손 개념의 div 바로 아래에 있는 span */
+            div>span {
+                border: 4px solid blue;
+            }
+            input[type=text] {
+                /* input 태그 중에서 type 속성값을 text로 가지는 태그의 배경 색상을 지정 */
+                background-color: red;
+            }
+            
+            input[type=password] {
+                /* input 태그 중에서 type 속성값을 password로 가지는 태그의 배경 색상을 지정 */
+                background-color: blue;
+            }
+</style>
+
+</head>
+<body>
+    <h1>Lorem ipsum</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <span>Lorem ipsum dolor sit amet,</span>
+    <h1>Lorem ipsum</h1>
+    <h2>Lorem ipsum</h2>
+    <h3>Lorem ipsum</h3>
+    <h4>Lorem ipsum</h4>
+    <h5>Lorem ipsum</h5>
+    <h6>Lorem ipsum</h6>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <h1 id="header">Lorem ipsum</h1>
+    <p class="box">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <p class="box">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+    <div>
+        <h1>제목1</h1>
+        <h2>제목2</h2>
+        <div>
+            <ul>
+                <li>menu1</li>
+                <li>menu2</li>
+                <li><span>menu3</span></li>
+            </ul>
+        </div>
+        <h2>제목2</h2>
+        <span>span</span>
+    </div>
+    <form>
+        <input type="text" />
+        <input type="password" />
+    </form>
+    
+</body>
+</html>

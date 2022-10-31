@@ -1,0 +1,9 @@
+<body>
+        <form>
+            <!--label 태그를 통한 폼 요소와의 연결--> 
+            <label for=”q_search”>질문검색</label>
+               <!--입력 양식 태그-->
+               <input type="text" name="search">
+               <input type="submit" value="검색">
+        </form>
+</body>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>스타일시트</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: '돋움';
+            /* 글꼴 */
+            color: red;
+            /* 글자 색상 */
+        }
+    </style>
+</head>
+
+<body>
+    
+    <h1>디자인과정</h1>
+    <ul>
+        <li>웹학과</li>
+        <li>편집디자인학과</li>
+        <li>CG학과</li>
+        <li>모션영상학과</li>
+        <li>건축인테리어학과</li>
+        <li>기계학과</li>
+    </ul>
+    
+</body>
+</html>

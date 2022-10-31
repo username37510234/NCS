@@ -1,0 +1,71 @@
+<body>
+    <!--header(시맨틱 태그)-->
+    <header>
+        <h1>WEB-logo</h1>        
+        <!--nav(시맨틱 태그)-->
+        <nav>            
+                <ul>
+                    <li>menu-1</li>
+                    <li>menu-1</li>
+                    <li>menu-1</li>
+                    <li>menu-1</li>
+                </ul>           
+
+                <ul>
+                    <li>menu-2</li>
+                    <li>menu-2</li>
+                    <li>menu-2</li>
+                    <li>menu-2</li>
+                </ul> 
+        </nav>
+    </header>
+
+    <!--본문 감싸주는 박스는 일반 선택자 박스로 지정-->
+    <div id="main">
+        <!--왼쪽 section (시맨틱 태그)-->
+        <section>            
+            <!--article (시맨틱 태그)-->
+            <article>
+                <h2>Main Article</h2>
+                <p>
+                    ColorZilla for Google Chrome is an extension that assists web developers and graphic designers with color related tasks - both basic and advanced. ColorZilla includes a Color Picker, Eye Dropper, Gradient Generator and many additional advanced color tools.
+                </p>
+            </article>            
+            <!--article (시맨틱 태그)-->
+            <article>
+                <h2>Main Article</h2>
+                <p>
+                    ColorZilla for Google Chrome is an extension that assists web developers and graphic designers with color related tasks - both basic and advanced. ColorZilla includes a Color Picker, Eye Dropper, Gradient Generator and many additional advanced color tools.
+                </p>
+            </article>
+            
+            <!--article (시맨틱 태그)-->
+            <article>
+                <h2>Main Article</h2>
+                <p>
+                    ColorZilla for Google Chrome is an extension that assists web developers and graphic designers with color related tasks - both basic and advanced. ColorZilla includes a Color Picker, Eye Dropper, Gradient Generator and many additional advanced color tools.
+                </p>
+            </article>
+        </section>
+        <!--오른쪽 aside (시맨틱 태그)-->
+        <aside>
+            <h2>Right aside</h2>
+            <p>
+                ColorZilla for Google Chrome is an extension that assists web developers and graphic designers with color related tasks - both basic and advanced.
+            </p>
+            <input type="email" />
+            <button>mailto</button>
+            <div class="bannerbox">
+                <h2>TEXT</h2>
+                <p>banner</p>
+            </div>
+        </aside>
+
+    </div>    
+    <!--하단 footer(시맨틱 태그)-->
+    <footer>       
+        <p>HTML5 COPYRIGHT</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>CSS 지정 방식</title>
+    <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+    
+    <p class=”design1”> 
+    디지털 디자인 이란 ? <br>
+    우선 '디지털(Digital)' 그리고 '디지털 스토리텔링(Digital Storytelling)'이란 말에 대해 생각해보자. 
+    </p>
+
+</body>
+</html>
+

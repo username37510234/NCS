@@ -1,0 +1,7 @@
+/* 애니메이션 시작 */
+        section {
+            animation: rint 3s linear 0s infinite;
+           /* 후손의 3차원 속성을 유지 */
+            transform-style: preserve-3d; /* 추가 입력 */
+        }
+

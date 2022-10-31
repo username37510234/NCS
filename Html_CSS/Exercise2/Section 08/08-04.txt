@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Keat</title>
+    <style>
+        .camera02 {
+            display: none; /* 해당 요소의 공간과 내용을 없앰 */
+        }
+    </style>
+</head>
+    
+<body>
+    
+    <img src="img/camera04.png" class="camera01">
+    <img src="img/camera05.png" class="camera02">
+    <img src="img/camera06.png" class="camera03">    
+    
+</body>
+</html>

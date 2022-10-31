@@ -1,0 +1,28 @@
+<?
+/* 접속기기를 인식하는 스크립트 */
+if(!function_exists("is_moblile"))
+{
+  function is_moblile()
+  {
+    $connet_m = $_SERVER['HTTP_USER_AGENT'];
+    if(strpos( $connet_m,  "iPhone", 0) > -1)
+    {
+      return "아이폰";
+    }  
+  
+    if(strpos( $connet_m,  "Android", 0) > -1)
+    {
+      return "안드로이드";
+    }      
+    return 0;
+  }  
+} 
+/* pc 폴더로 갈지 mobile 폴더로 갈지의 조건문 형태 */
+if($PC_MODE == 'true') $_SESSION['PC_MODE'] = "true";
+
+if(is_moblile() && $_SESSION['PC_MODE'] != "true")
+{
+/* 모바일 폴더로 간다면 모바일 폴더의 페이지 주소 입력 */
+  header("location:http://musehdw.dothome.co.kr/mobile.html");
+}
+?>

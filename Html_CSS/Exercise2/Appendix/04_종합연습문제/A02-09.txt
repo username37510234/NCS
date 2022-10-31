@@ -1,0 +1,85 @@
+     /* footer 하단 구조 */
+      footer {
+            /* 가로 넓이 */
+            width: 100%;
+            /* 세로 높이 */
+            height: 90px;
+            /* 배경 색상 */
+            background-color: #28282a;
+            /* 높이만큼 보여짐 */
+            overflow: hidden;
+            /* 상대 위치 */
+            position: relative;
+        }
+        
+        footer>div {
+            /* 가로 넓이 */
+            width: 1200px;
+            /* 세로 높이 */
+            height: 90px;
+            /* block 속성일 때 가운데 배치 */
+            margin: 0 auto;
+            /* 상대 위치 */
+            position: relative;
+        }
+        
+        footer>div>img {
+            /* 왼쪽 기준 정렬 */
+            float: left;
+            /* 바깥쪽 여백 */
+            margin-top: 35px;
+        }
+        
+        footer>div>p {
+            /* 왼쪽 기준 정렬 */
+            float: left;
+            /* 줄 간격 */
+            line-height: 24px;
+            /* 바깥쪽 여백 */
+            margin-top: 24px;
+            margin-left: 32px;
+            /* 글자 색상 */
+            color: #b9b9b9;
+        }
+        
+        footer p>a {
+            /* 글자 색상 */
+            color: #b9b9b9;
+            /* 바깥쪽 여백 */
+            margin-left: 20px;
+        }
+        
+        footer p>span {
+            /* 글자 색상 */
+            color: #69696b;
+            /* 글자 크기 */
+            font-size: 11px;
+        }
+        
+        footer>div>div {
+            /* 오른쪽 기준 정렬 */
+            float: right;
+            /* 바깥쪽 여백 */
+            margin-top: 28px;
+        }
+        
+        footer>div>div>img {
+            /* 왼쪽 기준 정렬 */
+            float: left;
+        }
+        
+        footer>div>div>select {
+            /* 속성 변경 */
+            display: block;
+            /* 왼쪽 기준 정렬 */
+            float: left;
+            /* 세로 높이 */
+            height: 40px;
+            /* 배경 색상 */
+            background-color: #242426;
+            /* 글자 색상 */
+            color: white;
+            /* 안쪽 여백 */
+            padding-left: 10px;
+            padding-right: 30px;
+        }

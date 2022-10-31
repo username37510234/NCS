@@ -1,0 +1,13 @@
+#position_static_parent{
+    width: 500px;
+    /* height: 500px; */
+    background-color: yellow;
+}
+#position_static_child{
+    position: static;
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    /* margin-top: 100px; */
+    /* top: 100px; */
+}

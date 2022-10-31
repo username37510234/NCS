@@ -1,0 +1,18 @@
+<style>
+        input[type=text] {
+            /* input 태그 중에서 type 속성값을 text로 가지는 태그의 배경 색상을 지정 */
+            background-color: red;
+        }
+        
+        input[type=password] {
+            /* input 태그 중에서 type 속성값을 password로 가지는 태그의 배경 색상을 지정 */
+            background-color: blue;
+        }
+</style>
+<body>
+    <form>
+        <input type="text" />
+        <input type="password" />
+    </form>
+</body>
+</html>

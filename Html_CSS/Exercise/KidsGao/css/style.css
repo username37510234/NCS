@@ -1,0 +1,809 @@
+/* 초기화 */
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+/* x축 밖 요소 감추기 */
+body{
+    overflow-x: hidden;
+}
+
+/* 초기화 */
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+}
+
+/* 초기화 */
+button{
+    border: none;
+    background-color: transparent;
+}
+
+/* 인트로 시작 */
+#intro {
+    width: 100%;
+    height: 1600px;
+    background-image: url(../img/intro/intro_bg.png);
+}
+
+#intro .introWrap{
+    position: relative;
+    width: 760px;
+    height: 516px;
+    /* background-color: yellow; */
+    /* 중앙 정렬 */
+    left: 50%;
+    margin-left: -380px;
+    top: 100px;
+}
+#intro .introWrap .logo {
+    position: absolute;
+    width: 760px;
+    height: 516px;
+    background-image: url(../img/intro/logo.png);
+    z-index: 100;
+}
+
+#intro .introWrap .lion {
+    position: absolute;
+    width: 161px;
+    height: 161px;
+    background-image: url(../img/intro/lion.png);
+    margin: 80px 0 0 30px;
+}
+
+#intro .introWrap .rabbit {
+    position: absolute;
+    width: 105px;
+    height: 129px;
+    background-image: url(../img/intro/rabbit.png);
+    margin: 90px 0 0 580px;
+}
+
+#intro .introWrap .bear {
+    position: absolute;
+    width: 112px;
+    height: 105px;
+    background-image: url(../img/intro/bear.png);
+    margin: 310px 0 0 560px;
+    z-index: 200;
+}
+
+#intro .introWrap .monkey {
+    position: absolute;
+    width: 85px;
+    height: 93px;
+    background-image: url(../img/intro/monkey.png);
+    margin: 310px 0 0 50px;
+    z-index: 200;
+}
+
+#intro .cloudWrap {
+    position: relative;
+    width: 100%;
+    height: 1050px;
+    /* background-color: pink; */
+}
+
+#intro .cloudWrap .leftCloud {
+    position: absolute;
+    width: 934px;
+    height: 816px;
+    background-image: url(../img/intro/cloud1.png);
+    left: 0;
+    z-index: 2;
+}
+
+#intro .cloudWrap .rightCloud {
+    position: absolute;
+    width: 843px;
+    height: 858px;
+    background-image: url(../img/intro/cloud2.png);
+    right: 0;
+    z-index: 1;
+}
+
+#intro .cloudWrap .dragonfly {
+    position: absolute;
+    width: 366px;
+    height: 228px;
+    background-image: url(../img/intro/dragonfly.png);
+
+    top: 820px;
+}
+/* 인트로 끝 */
+
+/* 농장1 시작 */
+#farm1 {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    background-image: url(../img/farm/farm1/farm1_bg.png);
+}
+
+#farm1 .leftRice1 {
+    position: absolute;
+    width: 390px;
+    height: 670px;
+    background-image: url(../img/farm/farm1/leftrice.png);
+}
+
+#farm1 .farmer {
+    position: absolute;
+    width: 747px;
+    height: 1078px;
+    background-image: url(../img/farm/farm1/farmer.png);
+    left: 50%;
+    margin-left: -310px;
+}
+
+#farm1 .rightRice1 {
+    position: absolute;
+    width: 335px;
+    height: 570px;
+    background-image: url(../img/farm/farm1/rightrice.png);
+    right: 0;
+    margin-top: 100px;
+}
+
+/* 농장 텍스트부분 */
+#farm1 .farmSpeechWrap {
+    position: relative;
+    top: 250px;
+    left: 150px;
+}
+
+#farm1 .farmSpeechWrap .farmSpeech {
+    color: #895C2f;
+    font-size: 18px;
+    line-height: 27px;
+}
+/* 농장1 끝 */
+
+/* 농장2 시작 */
+#farm2 {
+    width: 100%;
+    height: 850px;
+    background-image: url(../img/farm/farm2/farm2_bg.png);
+}
+
+#farm2 .leftRice2 {
+    width: 250px;
+    height: 850px;
+    background-image: url(../img/farm/farm2/leftrice2.png);
+    float: left;
+}
+
+#farm2 .scarecrow {
+    position: absolute;
+    width: 103px;
+    height: 206px;
+    background-image: url(../img/farm/farm2/scarecrow.png);
+    margin: 200px 0 0 300px;
+}
+
+#farm2 .scarecrow2 {
+    position: absolute;
+    width: 103px;
+    height: 206px;
+    background-image: url(../img/farm/farm2/scarecrow.png);
+    margin: 200px 0 0 300px;
+    left: 1278px;
+}
+
+#farm2 .rightRice2 {
+    width: 236px;
+    height: 850px;
+    background-image: url(../img/farm/farm2/rightrice2.png);
+    float: right;
+}
+/* 농장2 끝 */
+
+/* 농장3 시작 */
+#farm3 {
+    width: 100%;
+    height: 850px;
+    background-image: url(../img/farm/farm3/farm3_bg.png);
+}
+
+#farm3 .farm3Window {
+    position: absolute;
+    width: 247px;
+    height: 169px;
+    background-image: url(../img/farm/farm3/window.png);
+    margin: 100px 0 0 100px;
+}
+
+#farm3 .machineWrap {
+    position: relative;
+    width: 600px;
+    height: 455px;
+    top: 150px;
+    left: 50%;
+    margin-left: -285px;
+}
+
+#farm3 .machineWrap .machine1{
+    position: absolute;
+    width: 586px;
+    height: 455px;
+    background-image: url(../img/farm/farm3/machine1.png);
+    z-index: 900;
+}
+
+#farm3 .machineWrap .sawShadow{
+    position: absolute;
+    width: 95px;
+    height: 95px;
+    background-image: url(../img/farm/farm3/sawshadow.png);
+    margin: 145px 0 0 145px;
+}
+
+#farm3 .machineWrap .saw1,
+#farm3 .machineWrap .saw2 {
+    position: absolute;
+    width: 95px;
+    height: 95px;
+    background-image: url(../img/farm/farm3/saw.png);
+}
+
+#farm3 .machineWrap .saw1{
+    margin: 140px 0 0 140px;
+}
+
+#farm3 .machineWrap .saw2{
+    margin: 140px 0 0 350px;
+}
+
+#farm3 .machineWrap .timer{
+    position: absolute;
+    width: 103px;
+    height: 104px;
+    background-image: url(../img/farm/farm3/second.png);
+    margin: 125px 0 0 45px;
+    z-index: 999;
+}
+
+#farm3 .machineWrap .machineBird{
+    position: absolute;
+    width: 44px;
+    height: 49px;
+    background-image: url(../img/farm/farm3/machinebird.png);
+    margin: 220px 0 0 20px;
+    z-index: 999;
+}
+
+#farm3 .farm3Bubble{
+    position: relative;
+    float: right;
+    top: -100px;
+    margin-right: 80px;
+}
+/* 농장3 끝 */
+
+/* 숲1 시작 */
+
+#forest1 {
+    width: 100%;
+    height: 1050px;
+    background-image: url(../img/forest/forest1/forest1_bg.png);
+}
+
+#forest1 .leftTree {
+    position: absolute;
+    width: 322px;
+    height: 990px;
+    background-image: url(../img/forest/forest1/lefttree.png);
+}
+
+#forest1 .treeWrap {
+    position: relative;
+    width: 304px;
+    height: 572px;
+    top: 100px;
+    float: right;
+}
+
+#forest1 .treeWrap .rabbit1 {
+    position: absolute;
+    width: 82px;
+    height: 103px;
+    background-image: url(../img/forest/forest1/rabbit1.png);
+    margin: 435px 0 0 107px;
+}
+
+#forest1 .treeWrap .rabbit2 {
+    position: absolute;
+    width: 56px;
+    height: 75px;
+    background-image: url(../img/forest/forest1/rabbit2.png);
+    margin: 435px 0 0 200px;
+}
+
+#forest1 .treeWrap .rightTree {
+    position: absolute;
+    width: 304px;
+    height: 572px;
+    background-image: url(../img/forest/forest1/righttree.png);
+}
+/* 숲1 끝 */
+
+/* 숲2 시작 */
+#forest2 {
+    width: 100%;
+    height: 750px;
+    background-image: url(../img/forest/forest2/forest2_bg.png);
+}
+
+#forest2 .frog {
+    position: absolute;
+    width: 153px;
+    height: 257px;
+    background-image: url(../img/forest/forest2/frog.png);
+    margin: 50px 0 0 100px;
+}
+
+#forest2 .machineWrap2 {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    top: 180px;
+    left: 50%;
+    margin-left: -180px;
+}
+
+#forest2 .machineWrap2 .machineBottom{
+    position: absolute;
+    width: 374px;
+    height: 162px;
+    background-image: url(../img/forest/forest2/machinebottom.png);
+    margin-top: 200px;
+    z-index: 200;
+}
+
+#forest2 .machineWrap2 .machineLeft{
+    position: absolute;
+    width: 123px;
+    height: 228px;
+    background-image: url(../img/forest/forest2/machineleft.png);
+    margin-top: 30px;
+    z-index: 200;
+}
+
+#forest2 .machineWrap2 .machineRight{
+    position: absolute;
+    width: 123px;
+    height: 248px;
+    background-image: url(../img/forest/forest2/machineright.png);
+    margin: 10px 0 0 260px;
+    z-index: 200;
+}
+
+#forest2 .forestBubble {
+    position: relative;
+    width: 365px;
+    height: 220px;
+    background-image: url(../img/forest/forest2/forestbubble.png);
+    top: -100px;
+    float: right;
+    margin-right: 100px;
+}
+
+#forest2 .forest2Tree {
+    position: relative;
+    width: 304px;
+    height: 282px;
+    background-image: url(../img/forest/forest2/forest2tree.png);
+    top: 50px;
+    float: left;
+}
+/* 숲2 끝 */
+
+/* 숲3 시작 */
+#forest3 {
+    width: 100%;
+    height: 600px;
+    background-image: url(../img/forest/forest3/forest3_bg.png);
+}
+
+#forest3 .forest3Wrap {
+    position: relative;
+    width: 354px;
+    height: 440px;
+    top: 100px;
+    float: right;
+}
+
+#forest3 .forest3Wrap .forest3Tree {
+    position: absolute;
+    width: 354px;
+    height: 440px;
+    background-image: url(../img/forest/forest3/forest3tree.png);
+}
+
+#forest3 .forest3Wrap .smallBird {
+    position: absolute;
+    width: 40px;
+    height: 35px;
+    background-image: url(../img/forest/forest3/bird_sm.png);
+    top: 120px;
+    left: 125px;
+}
+
+#forest3 .forest3Wrap .bigBird {
+    position: absolute;
+    width: 83px;
+    height: 80px;
+    background-image: url(../img/forest/forest3/bird_big.png);
+    margin: 280px 0 0 94px;
+}
+/* 숲3 끝 */
+
+/* 과학 시작 */
+#science {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    background-image: url(../img/science/science_bg.png);
+}
+
+#science .scienceWrap {
+    position: relative;
+    width: 1066px;
+    height: 611px;
+    left: 50%;
+    margin-left: -533px;
+}
+
+#science .scienceWrap .scienceLeftWrap {
+    float: left;
+}
+
+#science .scienceWrap .scienceLeftWrap .gly {
+    width: 230px;
+    height: 192px;
+    background-image: url(../img/science/gly.png);
+    margin-bottom: 130px;
+    margin-left: 55px;
+}
+
+#science .scienceWrap .scienceLeftWrap p {
+    color: #8E7577;
+    font-size: 18px;
+    line-height: 26px;
+    padding-top: 10px;
+}
+
+
+#science .scienceWrap .scienceCenterWrap {
+    float: left;
+}
+
+#science .scienceWrap .scienceCenterWrap .purpleSteam {
+    position: relative;
+    width: 241px;
+    height: 216px;
+    background-image: url(../img/science/grape.png);
+    left: 50%;
+    margin-left: -120px;
+    z-index: 100;
+}
+
+#science .scienceWrap .scienceCenterWrap .funnelBack {
+    position: absolute;
+    width: 488px;
+    height: 438px;
+    background-image: url(../img/science/hopperback.png);
+    margin-top: -45px;
+}
+
+#science .scienceWrap .scienceCenterWrap .funnelFront {
+    position: relative;
+    width: 485px;
+    height: 390px;
+    background-image: url(../img/science/hopperfront.png);
+    margin-top: 5px;
+    margin-left: 2px;
+}
+
+#science .scienceWrap .scienceRightWrap {
+    float: right;
+}
+
+#science .scienceWrap .scienceRightWrap .water {
+    width: 204px;
+    height: 191px;
+    background-image: url(../img/science/water.png);
+    margin-bottom: 130px;
+}
+
+#science .scienceWrap .scienceRightWrap p {
+    color: #8E7577;
+    font-size: 18px;
+    line-height: 26px;
+    padding-top: 10px;
+}
+/* 과학 끝 */
+
+/* 밤1 시작 */
+#night1 {
+    width: 100%;
+    height: 700px;
+    background-image: url(../img/oneday/night1/night1_bg.png);
+}
+
+#night1 .owl {
+    position: absolute;
+    width: 334px;
+    height: 571px;
+    background-image: url(../img/oneday/night1/owl.png);
+    margin-top: 50px;
+}
+
+#night1 .starWrap {
+    position: relative;
+    width: 750px;
+    height: 400px;
+    top: 150px;
+    margin-left: 600px;
+}
+
+#night1 .starWrap .star1,
+#night1 .starWrap .star2,
+#night1 .starWrap .star3 {
+    position: absolute;
+    width: 53px;
+    height: 50px;
+    background-image: url(../img/oneday/night1/star1.png);
+}
+
+#night1 .starWrap .star1{
+    margin-top: 350px;
+}
+#night1 .starWrap .star2{
+    margin-left: 650px;
+}
+#night1 .starWrap .star3{
+    margin: 250px 0 0 500px;
+}
+/* 밤1 끝 */
+
+/* 밤2 시작 */
+#night2 {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    background-image: url(../img/oneday/night2/night2_bg.png);
+}
+
+#night2 .moon{
+    width: 135px;
+    height: 135px;
+    background-image: url(../img/oneday/night2/moon.png);
+    background-repeat: no-repeat;
+}
+
+#night2 .night2Bubble {
+    position: absolute;
+    margin: 300px 0 0 80px;
+}
+
+#night2 .rightMoonTree {
+    position: absolute;
+    width: 243px;
+    height: 588px;
+    background-image: url(../img/oneday/night2/moontree.png);
+    right: 0;
+    bottom: 0;
+}
+/* 밤2 끝 */
+
+/* 아침 시작 */
+#morning {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    background-image: url(../img/oneday/morning/morning_bg.png);
+}
+
+#morning .sun {
+    width: 131px;
+    height: 131px;
+    background-image: url(../img/oneday/morning/sun.png);
+}
+
+#morning .leftPine {
+    position: absolute;
+    width: 231px;
+    height: 329px;
+    background-image: url(../img/oneday/morning/leftpine.png);
+    top: 270px;
+}
+
+#morning .rightPine {
+    position: absolute;
+    width: 294px;
+    height: 609px;
+    background-image: url(../img/oneday/morning/rightpine.png);
+    right: 0;
+    bottom: 0;
+}
+/* 아침 끝 */
+
+/* 부엌 시작 */
+#kitchen {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    background-image: url(../img/kitchen/kitchen_bg.png);
+}
+
+#kitchen .leftPan {
+    float: left;
+    width: 253px;
+    height: 384px;
+    background-image: url(../img/kitchen/pan.png);
+}
+
+#kitchen .rightPot {
+    float: right;
+    width: 243px;
+    height: 132px;
+    background-image: url(../img/kitchen/pot.png);
+}
+
+#kitchen .steamWrap {
+    position: relative;
+    width: 483px;
+    height: 457px;
+    left: 50%;
+    margin-left: -275px;
+    top: -100px;
+
+    clear: both; /* float 속성 초기화*/
+}
+
+#kitchen .steamWrap .steam {
+    position: absolute;
+    width: 479px;
+    height: 457px;
+    background-image: url(../img/kitchen/steam.png);
+    z-index: 100;
+}
+
+#kitchen .steamWrap .bubble1 {
+    position: absolute;
+    width: 55px;
+    height: 56px;
+    background-image: url(../img/kitchen/bubble.png);
+    margin-top: 230px;
+    z-index: 50;
+}
+
+#kitchen .kitchenBubble {
+    position: absolute;
+    right: 0;
+    top: 400px;
+}
+/* 부엌 끝 */
+
+/* 색상1 시작 */
+#color1 {
+    width: 100%;
+    height: 750px;
+    background-image: url(../img/color/color1/color1_bg.png);
+}
+
+#color1 .penguin {
+    position: relative;
+    width: 356px;
+    height: 244px;
+    background-image: url(../img/color/color1/penguin.png);
+    top: 100px;
+    left: 100px;
+}
+
+#color1 .color1Bubble {
+    position: relative;
+    float: right;
+    margin: 100px 200px 0 0;
+}
+/* 색상1 끝 */
+
+/* 색상2 시작 */
+#color2 {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    background-image: url(../img/color/color2/color2_bg.png);
+}
+
+#color2 .horse {
+    float: right;
+    width: 188px;
+    height: 241px;
+    background-image: url(../img/color/color2/horse.png);
+    margin: 100px 100px 0 0;
+}
+
+#color2 .color2Wrap {
+    clear: both;
+    position: relative;
+    width: 500px;
+    top: 100px;
+    margin-left: 50px;
+}
+
+#color2 .color2Wrap .color2Bubble {
+    margin-bottom: 30px;
+}
+
+#color2 .color2Wrap .btn-wrap {
+    margin-bottom: 20px;
+}
+
+#color2 .color2Wrap .btn-wrap .red,
+#color2 .color2Wrap .btn-wrap .yellow,
+#color2 .color2Wrap .btn-wrap .blue {
+    width: 59px;
+    height: 82px;
+}
+
+#color2 .color2Wrap .btn-wrap .red {
+    background-image: url(../img/color/color2/btn/btn_red.png);
+}
+
+#color2 .color2Wrap .btn-wrap .yellow {
+    background-image: url(../img/color/color2/btn/btn_yellow.png);
+}
+
+#color2 .color2Wrap .btn-wrap .blue {
+    background-image: url(../img/color/color2/btn/btn_blue.png);
+}
+
+#color2 .cloudWrap .color2Comment {
+    color: #8E7577;
+}
+/* 색상2 끝 */
+
+/* 색상3 시작 */
+#color3 {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    background-image: url(../img/color/color3/color3_bg.png);
+}
+
+#color3 .flag {
+    position: relative;
+    width: 1774px;
+    height: 178px;
+    background-image: url(../img/color/color3/flag.png);
+    left: 50%;
+    margin-left: -887px;
+}
+
+#color3 .book {
+    float: right;
+    width: 417px;
+    height: 178px;
+    background-image: url(../img/color/color3/book.png);
+}
+
+#color3 .logo {
+    position: absolute;
+    left: 50%;
+    margin-left: -378.5px;
+}
+
+#color3 .dice {
+    position: absolute;
+    width: 239px;
+    height: 200px;
+    background-image: url(../img/color/color3/dice.png);
+    left: 0;
+    bottom: 0;
+}
+

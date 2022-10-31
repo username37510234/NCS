@@ -1,0 +1,94 @@
+#main {
+            /* 상대 위치 */
+            position: relative;
+            /* 배경 이미지 */
+            background-image: url(img/img001.png);
+            /* 배경 이미지 크기 */
+            background-size: cover;
+            /* 배경 이미지 위치를 반응형을 염두에 두고 가운데로 배치함 */
+            background-position: center;
+            /* 배경 이미지 반복 */
+            background-repeat: no-repeat;
+            /* 스크롤에 따른 배경 이미지의 이동을 스크롤과 함께 이동 */
+            background-attachment: scroll;
+            /* 높이만큼만 보여짐 */
+            overflow: hidden;
+        }
+        
+        #main>h1 {
+            /* 가로 넓이 */
+            width: 390px;
+            /* 높이만큼만 보여짐 */
+            overflow: hidden;
+            /* block 속성일 때 가운데 배치 */
+            margin: 80px auto;
+        }
+        
+        #main>div {
+            /* 가로 넓이 */
+            width: 960px;
+            /* 높이만큼 늘어남 */
+            overflow: hidden;
+            /* block 속성일때 가운데 배치 */
+            margin: 0 auto;
+            margin-bottom: 60px;
+        }
+        
+        #main>div a {
+            /* 왼쪽 기준 정렬 */
+            float: left;
+            /* 가로 넓이 */
+            width: 160px;
+            /* 세로 높이 */
+            height: 80px;
+            /* 배경 색상 */
+            background-color: blueviolet;
+            /* 안쪽 여백 */
+            padding-top: 30px;
+            padding-bottom: 30px;
+            /* 속성 변경 */
+            display: block;
+            /* 상대 위치 */
+            position: relative;
+            /* 높이만큼 보여짐 */
+            overflow: hidden;
+            /* 배경 색상을 rgba로 지정 */
+            background-color: rgba(17, 145, 208, 0.9);
+        }
+        
+        #main>div a:first-child {
+            /* a속성 중에서 첫 번째 a속성의 배경 색상 */
+            background-color: rgba(245, 130, 31, 0.9);
+        }
+        
+        #main>div a:last-child {
+            /* a속성 중에서 마지막 번째 a속성의 배경 색상 */
+            background-color: rgba(77, 184, 72, 0.9);
+        }
+        
+        #main>div a>img {
+            /* block 속성일 때 가운데 배치 */
+            margin: 0 auto;
+        }
+        
+        #main>div a>span {
+            /* 절대 위치 */
+            position: absolute;
+            /* 하단으로부터의 위치 */
+            bottom: 30px;
+            /* 글자의 정렬 */
+            text-align: center;
+            /* 속성 변경 */
+            display: block;
+            /* 가로 넓이 */
+            width: 100%;
+            /* 글자 색상 */
+            color: lightgrey;
+        }
+        
+        #main>div a:hover span {
+            /* 글자 색상 */
+            color: white;
+            /* 글자 굵기 */
+            font-weight: 800;
+        }

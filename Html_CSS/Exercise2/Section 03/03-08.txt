@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>주석문 태그</title>
+</head>
+<body>
+
+<!--문서 내용의 시작-->
+
+<!--제목 태그의 시작-->
+    <h1>Header-1</h1>
+
+<!--첫 번째 단락-->
+    <p>
+      Lorem Ipsum is simply dummy text of the <br> printing and typesetting industry. 
+    </p>
+   
+<!--두 번째 단락-->
+    <p>
+      when an unknown printer took a galley of type <br> and scrambled it to make a type specimen book. 
+    </p>
+
+</body>
+</html>

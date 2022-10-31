@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>연습문제 3</title>
+    <style>
+        h5 {
+            /* 태그 선택자 */
+            /* 배경 색상 */
+            background-color: cadetblue;
+            /* 글자 정렬 */
+            text-align: center;
+            /* 글자 색상 */
+            color: white;
+        }        
+        h1 {
+            /* 태그 선택자 */
+            /* 배경 색상 */
+            background-color: beige;
+        }        
+        h2 {
+            /* 태그 선택자 */
+            /* 배경 색상 */
+            background-color: beige;
+        }        
+        p {
+            /* 태그 선택자 */
+            /* 글자 줄 간격 */
+            line-height: 30px;
+        }        
+        .mundan1 {
+            /* 클래스 선택자 */
+            /* 글자 색상 */
+            color: red;
+        }        
+        .point {
+            /* 클래스 선택자 */
+            /* 글자 색상 */
+            color: blue;
+            /* 글자 크기 */
+            font-size: 30px;
+        }        
+        ol {
+            /* 태그 선택자 */
+            /* 배경 색상 */
+            background-color: orange;
+        }        
+        .line {
+            /* 클래스 선택자 */
+            /* 글자 모양 지정 */
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <h5>Mobile WEB & APP</h5>
+    <h1>모바일 웹&앱</h1>
+    <p class="mundan1">
+        <span class="point">모</span>바일 웹앱은 일반적인 웹 사이트보다 모바일에 더 최적화 되고 네이티브 애플리케이션화된 형태를 한정하는 표현입니다.
+    </p>
+    <p>
+        <span class="point">웹</span>기술만을 사용해서 풀스크린모드, 애니메이션 효과, 터치 상호작용 등 향상된 스타일등을 구현하여 모바일 환경에서 네이티브 애플리케이션과 유사한 실행환경, 사용자 경험을 제공하는 형태의 애플리케이션으로 사용자를 고려합니다.
+    </p>
+    <p>
+        <span class="point">더</span>욱 섬세하고 치밀하게 계산된 UI/UX 디자인, 모바일 환경에 최적화된 웹과 앱의 융합을 통해 실무에 적용할 수 있도록 UI/UX 최신 모바일 트렌드를 중심으로 교육합니다.
+    </p>
+
+    <h2>교육과정소개</h2>
+    <ol>
+        <li>HTML5&CSS3</li>
+        <li class="line">모바일웹&자바스크립트 제이쿼리</li>
+        <li>제이쿼리 모바일</li>
+        <li>모바일 웹앱 제작하기</li>
+    </ol>
+
+</body>
+</html>

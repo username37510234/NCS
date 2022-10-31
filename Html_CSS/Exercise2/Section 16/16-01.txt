@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">   
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Keat</title>
+    <style>
+        /* 기본 스타일 */        
+        * {
+            margin: 0;
+            padding: 0;
+        }        
+        section {
+            /* 넓이 */
+            width: 300px;
+            /* 높이 */
+            height: 300px;
+            /* 테두리 스타일 */
+            border: 5px solid black;
+            /* 바깥쪽 여백 */
+            margin: 100px;
+        }        
+        div {
+            /* 넓이 */
+            width: 300px;
+            /* 높이 */
+            height: 300px;
+            /* 배경 색상 */
+            background-color: royalblue;
+            /* 60도로 변형 */
+            transform: rotate(60deg);
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div></div>
+    </section>
+</body>
+</html>
+
+

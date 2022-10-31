@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">    
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Keat</title>   
+</head>
+<body>    
+    <form>        
+        <fieldset>
+            <legend>사용자 정보 입력</legend>
+            <!--label 태그를 통한 폼 요소와의 연결-->
+            <label for="user1">성명</label>
+            <!--입력 양식 태그-->
+            <input type="text" name="name1">            
+        </fieldset>        
+        <fieldset>
+            <legend>배송지 정보 입력</legend>
+            <!--label 태그를 통한 폼 요소와의 연결-->
+            <label for="address">주소</label>
+            <!--입력 양식 태그-->
+            <input type="text" name="address1">            
+        </fieldset> 
+    </form>
+</body>
+</html>

@@ -1,0 +1,44 @@
+#wrapper {
+            /* 906px에서 96%로 임의지정 변경 */
+            width: 96%;
+            /* 전체 가운데 배치 */
+            margin: 0 auto;
+        }
+        
+        /* 요소의 넓이 값으로 각 요소의 넓이 값을 계산하는 방법 */
+        /* (요소의 넓이 / 콘텐츠 전체를 감싸는 요소의 넓이) x 100  */
+        header {
+             /* 가로 넓이 */
+            width: 100%;
+            /* 세로 높이 */
+            height: 120px;
+            /* 배경 색상 구분 */
+            background-color: aquamarine;
+        }
+        
+        aside {
+            /* 왼쪽 기준 정렬 */
+            float: left;
+            /* 가로 넓이 (300 / 960) x 100 = 31.25 */
+            width: 31.25%;
+            /* 배경 색상 구분 */
+            background-color: antiquewhite;
+        }
+        
+        section {
+            /* 오른쪽 기준 정렬 */
+            float: right;
+            /* 가로 넓이 (600 / 960) x 100 = 62.5 */
+            width: 62.5%;
+            /* 배경 색상 구분 */
+            background-color: darksalmon;
+        }
+        
+        footer {
+            /* 박스가 치고 올라가는 것을 막아줌 */
+            clear: both;
+            /* 가로 넓이 */
+            width: 100%;
+            /* 배경 색상 */
+            background-color: gray;
+        }

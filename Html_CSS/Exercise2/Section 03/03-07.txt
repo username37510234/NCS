@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>inline 요소의 텍스트</title>
+</head>
+<body>
+
+     <strong>굵게</strong>     <br>
+     <b>굵게</b>                  <br>
+     <i>기울이기</i>               <br>
+     <em>기울이기</em>        <br>
+     <q>장마</q>기간입니다.    <br>
+     <mark>형광펜 표시</mark> <br>
+     <span>글자내용</span>    <br>
+     <ruby>漢子
+           <rt>한자</rt>
+     </ruby>
+     <br>
+
+</body>
+</html>

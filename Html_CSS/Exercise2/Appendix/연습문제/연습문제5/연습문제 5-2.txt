@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">    
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>연습문제 5-2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }        
+        .box1 {
+            width: 350px;
+            /* 넓이 */
+            height: 200px;
+            /* 높이 */
+            border-left: 20px solid green;
+            /* 선의 굵기, 선의 스타일, 선의 색상 */
+            float: left;
+            /* 왼쪽 기준 정렬 */
+            background-color: lightblue;
+            /* 배경 색상 */
+            padding-right: 20px;
+            /* 오른쪽 안쪽 여백 */
+            margin-left: 30px;
+            /* 왼쪽 바깥쪽 여백 */
+            margin-top: 15px;
+            /* 상단 바깥쪽 여백 */
+            /* 가로 : 350 + 20 + 20 + 30 + 15 = 435 */
+            /* 세로 : 200 + 15 = 215 */
+        }        
+        .box2 {
+            width: 300px;
+            /* 넓이 */
+            height: 200px;
+            /* 높이 */
+            border-right: 10px solid green;
+            /* 선의 굵기, 선의 스타일, 선의 색상 */
+            float: left;
+            /*왼쪽기준정렬*/
+            background-color: lightblue;
+            /* 배경 색상 */
+            padding-left: 10px;
+            /* 왼쪽 안쪽 여백 */
+            margin-left: 40px;
+            /* 왼쪽 바깥쪽 여백 */
+            margin-top: 15px;
+            /* 상단 바깥쪽 여백 */
+            /* 가로 : 300 + 10 + 10 + 40 = 360 */
+            /* 세로 : 200 + 15 = 215 */
+            
+            /* .box1+.box2= 가로 795px, 세로 215px */
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="box1">
+        box1
+    </div>
+    <div class="box2">
+        box2
+    </div> 
+    
+</body>
+</html>

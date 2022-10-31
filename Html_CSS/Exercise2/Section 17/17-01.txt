@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">    
+    <title>Keat</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }        
+        /* 클래스 box의 기본 스타일 지정 */
+        .box {
+            /* 넓이 */
+            width: 200px;
+            /* 높이 */
+            height: 200px;
+            /* 상대 좌표 */
+            position: relative;
+            /* 배경 색상 */
+            background-color: green;
+        }
+        
+        /* 클래스 box의 마우스를 올렸을 때 반응하는 값 */
+        .box:hover {
+            /* 넓이 */
+            width: 400px;
+            /* 높이 */
+            height: 400px;
+        }
+        
+        /* 클래스 box의 마우스를 클릭했을 때 반응하는 값 */
+        .box:active {
+            /* 배경 색상 */
+            background-color: aqua;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+</html>

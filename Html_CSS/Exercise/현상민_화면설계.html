@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="Web Tutorial">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="author" content="Hyeon">
+    <title>웹 프로그래밍 기초</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="first1" class="font1" >오늘의 자바</header>
+    <div id="second2" class="font2"><br>
+        자바를 통해 계산기 프로그램을 실습하였다.<br>
+    해당 프로그램은 Java 프로그램을 기반으로 만들어졌으며,<br>
+기본적인 사칙연산 외에도 <strong>'%'</strong> 버튼을 통한 나머지 계산이 가능하게 만들어졌다.<br>
+그 외에도 연속적인 계산이 가능하도록 임시 저장기능을 만들어놓았으며,<br>
+<strong>'='</strong>버튼을 누르지 않아도 계산이 되도록 기능을 추가하였다.<br>
+자세한 내용을 확인할 수 있도록 코드를 아래에 일부 남겨놓는다.<br>
+</div>
+    <footer id="third3" class="font3">public void logic() {
+	    int sigh = Integer.parseInt(textField.getText());<br>
+        int result = 0;<br>
+	    switch (comb) {<br>
+            &nbsp;&nbsp;    case "+" : result = num+sigh;break;<br>
+            &nbsp;&nbsp;    case "-" : result = num-sigh;break;<br>
+            &nbsp;&nbsp;    case "*" : try{result = num*sigh;}catch(Exception exc){result=0;}break;<br>
+            &nbsp;&nbsp;    case "/" : try{result = num/sigh;}catch(Exception exc){result=0;}break;<br>
+            &nbsp;&nbsp;    case "%" : try{result = num%sigh;}catch(Exception exc){result=0;}break;<br>
+            &nbsp;&nbsp;    }<br>
+        textfieldNorth.setText(num+" "+comb+" "+count+" =");<br>
+        textfieldNorth.getText();<br>
+        count = String.valueOf(result);<br>
+        num = result;<br>
+	} </footer>
+</body>
+
+</html>

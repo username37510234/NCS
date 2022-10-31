@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Keat</title>
+    
+    <!--모바일 뷰 포트-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimun-scale=1.0" />
+    <!--부트스트랩 css 파일-->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!--제이쿼리 파일 연결-->
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+    <!--부트스트랩 스크립트 파일-->
+    <script src="js/bootstrap.js"></script>
+
+    <style>
+        .line {
+            /* 결과값을 보기 위한 클래스 선택자 */
+            border: 2px solid black;
+            height: 100px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <!--전체 12column 중에서 11column만 콘텐츠 1column은 여백-->
+            <div class="col-lg-11 col-lg-offset-1 line">logo</div>
+
+            <!--전체 12column 중에서 10column만 콘텐츠 2column은 여백-->
+            <div class="col-lg-10 col-lg-offset-2 line">logo</div>
+
+            <!--전체 12column 중에서 9column만 콘텐츠 3column은 여백-->
+            <div class="col-lg-9 col-lg-offset-3 line">logo</div>
+
+            <!--전체 12column 중에서 8column만 콘텐츠 3column은 여백-->
+            <div class="col-lg-8 col-lg-offset-4 line">logo</div>
+
+            <!--전체 12column 중에서 7column만 콘텐츠 3column은 여백-->
+            <div class="col-lg-7 col-lg-offset-5 line">logo</div>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>

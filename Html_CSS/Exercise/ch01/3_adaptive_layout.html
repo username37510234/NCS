@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>적응형 레이아웃</title>
+
+    <style>
+
+        .wrapper {
+            width: 400px;
+            margin: 0 auto;
+        }
+
+        header, footer {
+            width: 400px;
+        }
+
+        nav {
+            width: 400px;
+        }
+
+        section {
+            width: 400px;
+        }
+
+        @media screen and (min-width: 800px) {
+
+            .wrapper {
+                width: 640px;
+            }
+
+            header, footer {
+                width: 640px;
+            }
+
+            nav, section {
+                float: left;
+            }
+
+            nav {
+                width: 133px;
+                margin-right: 10px;
+            }
+
+            section {
+                width: 497px;
+            }
+
+            footer {
+                clear: both;
+            }
+
+        }
+
+
+        @media screen and (min-width: 1000px) {
+
+            .wrapper {
+                width: 960px;
+            }
+
+            header, footer {
+                width: 960px;
+            }
+
+            nav {
+                width: 200px;
+            }
+
+            section {
+                width: 750px;
+            }
+
+        }
+
+        *, *:before, *:after {
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #fff;
+            color: black;
+            text-align: center;
+            margin: 0;
+        }
+
+        header,
+        nav,
+        section,
+        footer {
+            border: 1px solid black;
+            margin-bottom: 10px;
+            border-radius: 3px;
+        }
+
+        header, footer {
+            padding: 20px 0;
+        }
+
+        nav, section {
+            padding: 200px 0;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="wrapper">
+        <h1>적응형 레이아웃</h1>
+        <header>HEADER</header>
+        <nav>NAV</nav>
+        <section>SECTION</section>
+        <footer>FOOTER</footer>
+    </div>
+
+</body>
+</html>

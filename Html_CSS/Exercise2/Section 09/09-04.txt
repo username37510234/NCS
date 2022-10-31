@@ -1,0 +1,36 @@
+<style>
+       div>h1 {
+            /* 자손 개념 css 문법 */
+            background-color: blue;
+        }        
+        div  h1 {
+            /* 후손 개념 css 문법 */
+            background-color: blue;
+        }
+        
+        /* 후손 개념의 div 아래에 있는 모든 span */        
+        div  span {
+            background-color: yellow;
+        }
+        
+        /* 자손 개념의 div 바로 아래에 있는 span */
+        div>span {
+            border: 4px solid blue;
+        }
+</style>
+<body>
+    <div>
+        <h1>제목1</h1>
+        <h2>제목2</h2>
+        <div>
+            <ul>
+                <li>menu1</li>
+                <li>menu2</li>
+                <li><span>menu3</span></li>
+            </ul>
+        </div>
+        <h2>제목2</h2>
+        <span>span</span>
+    </div>
+</body>
+</html>

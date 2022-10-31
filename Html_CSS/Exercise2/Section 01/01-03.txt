@@ -1,0 +1,12 @@
+    <header>Header 영역</header>
+
+    <section>
+       <article>독립적영역</article>
+       <main>메인 컨텐츠 영역</main>
+    </section>
+
+    <aside>
+       <nav>네비게이션 영역</nav>
+    </aside>
+
+    <footer>Footer 영역</footer>

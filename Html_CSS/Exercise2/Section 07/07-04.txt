@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <title>Keat</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }        
+        .banner {
+            width: 740px; /* 넓이 */
+            height: 120px; /* 높이 */
+            background-color: burlywood; /* 배경 색상 */
+            float: left; /* 왼쪽 기준 정렬 */
+        }        
+        .login {
+            width: 333px; /* 넓이 */
+            height: 120px; /* 높이 */
+            float: left; /* 왼쪽 기준 정렬 */
+            background-color: beige; /* 배경 색상 */
+            margin-left: 8px;
+            /* 로그인 박스 기준에서 간격을 주고자 왼쪽 바깥쪽 여백을 지정하였으며, 배너 박스 기준일 때 바깥쪽 여백은 margin-right가 됨.*/
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="banner">배너영역</div>
+    <div class="login">로그인</div>
+    
+</body>
+</html>

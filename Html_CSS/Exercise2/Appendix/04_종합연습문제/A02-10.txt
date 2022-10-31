@@ -1,0 +1,23 @@
+footer>div>div>select {
+            /* 속성 변경 */
+            display: block;
+            /* 왼쪽 기준 정렬 */
+            float: left;
+            /* 세로 높이 */
+            height: 40px;
+            /* 배경 색상 */
+            background-color: #242426;
+            /* 글자 색상 */
+            color: white;
+            /* 안쪽 여백 */
+            padding-left: 10px;
+            padding-right: 30px;
+        }
+        
+        /*----------여기서부터는 반응형 미디어쿼리 지정---------*/
+        /* 가로 넓이 0에서 960까지의 브라우저 넓이에서는 다음의 반응형 요소를 적용 */
+        
+        @media screen and (max-width:960px) {
+              /* 여기에 반응형으로 변경되는 선택자와 스타일 지정 */
+
+        }

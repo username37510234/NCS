@@ -1,0 +1,9 @@
+<style>
+        table {
+            border: 2px solid black; /* 테두리 스타일 */  
+            border-collapse: collapse;  /* 테두리 통합 */
+            width:400px;  /*너비*/
+            table-layout: fixed;  /* 지정된 넓이를 고정시킴 */
+           word-break: break-all;  
+           /* 셀의 내용이 벗어나지 않도록 함 */
+        }

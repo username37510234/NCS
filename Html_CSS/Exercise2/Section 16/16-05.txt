@@ -1,0 +1,101 @@
+<style>
+        /* 기본 스타일 */
+        
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        section {
+            /* 넓이 */
+            width: 300px;
+            /* 높이 */
+            height: 300px;
+            /* 상대 좌표 */
+            position: relative;
+        }
+        
+        div {
+            /* 넓이 */
+            width: 300px;
+            /* 높이 */
+            height: 300px;
+            /* 절대 좌표 */
+            position: absolute;
+            /* 왼쪽으로부터 위치 */
+            left: 0;
+            /* 상단으로부터 위치 */
+            top: 0;
+            /* 투명도 30% */
+            opacity: 0.3;
+        }
+        
+        /*옆면*/
+        
+        div:nth-child(1) {
+            /* rotate : 회전, 3차원 변환 함수(특정 크기만큼 이동) */
+            transform: rotateY(0deg) translate3d(0px, 0px, 100px);
+        }
+        
+        div:nth-child(2) {
+            /* rotate : 회전, 3차원 변환 함수(특정 크기만큼 이동) */
+            transform: rotateY(90deg) translate3d(0px, 0px, 100px);
+        }
+        
+        div:nth-child(3) {
+            /* rotate : 회전, 3차원 변환 함수(특정 크기만큼 이동) */
+            transform: rotateY(180deg) translate3d(0px, 0px, 100px);
+        }
+        
+        div:nth-child(4) {
+            /* rotate : 회전, 3차원 변환 함수(특정 크기만큼 이동) */
+            transform: rotateY(270deg) translate3d(0px, 0px, 100px);
+        }
+        
+        /* 윗면과 아랫면 */
+        
+        div:nth-child(5) {
+            /* rotate : 회전, 3차원 변환 함수(특정 크기만큼 이동) */
+            transform: rotateX(90deg)translate3d(0px, 0px, 100px);
+        }
+        
+        div:nth-child(6) {
+            /* rotate : 회전, 3차원 변환 함수(특정 크기만큼 이동) */
+            transform: rotateX(270deg) translate3d(0px, 0px, 100px);
+        }
+        
+        
+        /* 색상 적용 */
+        
+        div:nth-child(1) {
+            /* rotate : 회전, 3차원 변환 함수(특정 크기만큼 이동) */
+            transform: rotateY(0deg) translate3d(0px, 0px, 100px);
+            background-color: red;
+        }
+        div:nth-child(2) {
+            /* rotate : 회전, 3차원 변환 함수(특정 크기만큼 이동) */
+            transform: rotateY(90deg) translate3d(0px, 0px, 100px);
+            background-color: green;
+        }
+        div:nth-child(3) {
+            /* rotate : 회전, 3차원 변환 함수(특정 크기만큼 이동) */
+            transform: rotateY(180deg) translate3d(0px, 0px, 100px);
+            background-color: blue;
+        }
+        div:nth-child(4) {
+            /* rotate : 회전, 3차원 변환 함수(특정 크기만큼 이동) */
+            transform: rotateY(270deg) translate3d(0px, 0px, 100px);
+            background-color: yellow;
+        }
+        div:nth-child(5) {
+            /* rotate : 회전, 3차원 변환 함수(특정 크기만큼 이동) */
+            transform: rotateX(90deg) translate3d(0px, 0px, 100px);
+            background-color: brown;
+        }
+        div:nth-child(6) {
+            /* rotate : 회전, 3차원 변환 함수(특정 크기만큼 이동) */
+            transform: rotateX(270deg) translate3d(0px, 0px, 100px);
+            background-color: pink;
+        }
+
+    </style>

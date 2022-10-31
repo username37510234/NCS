@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>링크</title>
+</head>
+<body>
+    
+    <!-- 링크 target 값의 종류-->
+    <p>
+        <!--target 값을 지정하지 않으면 _self와 같음-->
+        <a href="https://www.naver.com">네이버(none)</a>
+    </p>
+    <p>
+        <!--현재 페이지에서 바로 페이지로 이동-->
+        <a href="https://www.daum.net" target="_self">다음(_self)</a>
+    </p>
+    <p>
+        <!--현재 페이지는 그대로 두고 새로운 브라우저 창이나 탭을 열어 이동-->
+        <a href="https://www.sbsart.com" target="_blank">SBS아카데미컴퓨터학원(_blank)</a>
+    </p>
+    <p>
+        <!-- 클릭했을 때 이동하는 페이지의 브라우저는 클릭했던 페이지의 부모 페이지에서 이동-->
+        <a href="https://www.google.com" target="_parent">구글(_blank)</a>
+    </p>
+
+</body>
+</html>

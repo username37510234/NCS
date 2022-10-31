@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Keat</title>
+    <style>
+        table {
+            border: 2px solid black;
+            /* 테두리 스타일 */
+            border-collapse: collapse;
+            /* 테두리 통합 */
+            width: 300px;
+            /* 넓이 */
+        }        
+        td {
+            border: 1px dotted black;
+            /* 테두리 스타일 */
+            padding: 10px;
+            /* 안쪽 여백 */
+            height: 100px;
+            /* 셀의 높이 */
+            text-align: center;
+            /* 글자 정렬 */
+            width: 200px;
+            /* 넓이 */
+        }        
+        /*셀 수직 정렬*/
+        .cell1 {
+            vertical-align: top; /* 상단 정렬 */
+        }
+        
+        .cell2 {
+            vertical-align: middle; /* 가운데 정렬 */
+        }
+        
+        .cell3 {
+            vertical-align: bottom; /* 하단 정렬 */
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>셀 정렬</caption>
+        <tr>
+            <td class="cell1">top</td>
+            <td class="cell2">middle</td>
+            <td class="cell3">bottom</td>
+        </tr>
+    </table>
+</body>
+</html>

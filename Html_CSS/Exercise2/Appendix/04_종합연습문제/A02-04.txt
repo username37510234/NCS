@@ -1,0 +1,19 @@
+</header>
+
+    <!-----------------------메인 이미지 작업--------------------------->
+    <div id="main">
+
+        <!--제목 글자-->
+        <h1><img src="img/visual_text.png"></h1>
+
+        <!--퀵 메뉴-->
+        <div>
+            <a href="#"><img src="img/quick0_on.png" alt="이미지 대체 텍스트"><span>위치/교통편</span></a>
+            <a href="#"><img src="img/quick1_on.png" alt="이미지 대체 텍스트"><span>층별안내</span></a>
+            <a href="#"><img src="img/quick2_on.png" alt="이미지 대체 텍스트"><span>편의시설</span></a>
+            <a href="#"><img src="img/quick3_on.png" alt="이미지 대체 텍스트"><span>단체관람</span></a>
+            <a href="#"><img src="img/quick4_on.png" alt="이미지 대체 텍스트"><span>장애인관람</span></a>
+            <a href="#"><img src="img/quick5_on.png" alt="이미지 대체 텍스트"><span>문의하기</span></a>
+        </div>
+
+    </div>

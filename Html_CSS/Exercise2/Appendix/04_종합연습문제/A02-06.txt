@@ -1,0 +1,66 @@
+<!--콘텐츠 부분-->
+    <div id="contents">
+
+        <!--6개의 박스-->
+        <div>
+            <h2>사이버체험</h2>
+            <a href="#">
+                <img src="img/img6.png" alt="이미지 대체 텍스트">
+            </a>
+        </div>
+
+        <div>
+            <h2>운영시간</h2>
+            <p>
+                <img src="img/img9.png" alt="이미지 대체 텍스트">
+            </p>
+        </div>
+
+        <div>
+            <h2>교육프로그램</h2>
+            <a href="#">
+                <img src="img/img5.png" alt="이미지 대체 텍스트">
+            </a>
+            <a href="#" class="more">
+                <img src="img/btn_more.png" alt="이미지 대체 텍스트">
+            </a>
+        </div>
+
+        <div>
+            <h2>홍보영상</h2>
+            <a href="#">
+                <img src="img/img7.png" alt="이미지 대체 텍스트">
+            </a>
+        </div>
+
+        <div>
+            <h2>문화행사</h2>
+            <a href="#">
+                <img src="img/img8.png" alt="이미지 대체 텍스트">
+            </a>
+            <a href="#" class="more">
+                <img src="img/btn_more.png" alt="이미지 대체 텍스트">
+            </a>
+        </div>
+
+        <div>
+            <h2>전시관소식</h2>
+            <p>
+                <a href="#">[공지] 야구발전전시관 개관 및 휴관일정 안내</a> <span>2019.04.22</span>
+                <br>
+                <a href="#">[행사안내] 3월, 4월 스포츠공연 전시관에 봄이</a> <span>2019.04.22</span>
+                <br>
+                <a href="#">[교육] 봄방학 어린이야구교실 프로그램</a> <span>2019.04.22</span>
+                <br>
+                <a href="#">[자료구매] 2018년 제3차 VR체험관 예정 자료</a> <span>2019.04.22</span>
+                <br>
+                <a href="#">[이벤트 종료] 야구발전전시관 전시관람 후기</a> <span>2019.04.22</span>
+                <br>
+                <a href="#">[자료구매] 2018년 야구발전전시관 기념 구매 </a> <span>2019.04.22</span>
+            </p>
+            <a href="#" class="more">
+                <img src="img/btn_more.png" alt="이미지 대체 텍스트">
+            </a>
+        </div>
+
+    </div>

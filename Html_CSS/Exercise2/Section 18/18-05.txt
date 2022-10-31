@@ -1,0 +1,2 @@
+/* 마우스를 올렸을 때 애니메이션을 중지 */
+#wrap:hover{animation-play-state: paused;}

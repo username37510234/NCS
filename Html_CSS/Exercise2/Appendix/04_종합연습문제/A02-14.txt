@@ -1,0 +1,27 @@
+@media screen and (max-width:960px) {
+
+/* 하단 카피라이트 부분에 대한 반응형 지정 */
+            footer>div {
+                /* 가로 넓이 */
+                width: 100%;  
+                /* 글자의 정렬 */
+                text-align: center; 
+                /* 반응형 효과를 부드럽게 나타내기 위한 애니메이션 효과로서 브라우저를 줄이거나 늘였을 때 부드럽게 0.7초만큼 반응 */
+                transition-duration: 0.7s;
+            }
+            /* 하단 로고 */
+            footer>div>img {
+                 /* 현재 미디어쿼리 안에서는 보이지 않도록 display:none으로 지정 */
+                display: none;
+            }
+            
+            footer>div>p {
+                 /* float 속성이 현재 지정되어 있어서 가운데 배치를 하기 위한 설정값을 초기화시킴 */
+                float: none;
+            }
+            /* 하단 블로그 및 바로가기 */
+            footer>div>div {
+                /* 현재 미디어쿼리 안에서는 보이지 않도록 display:none으로 지정 */
+                display: none;
+            }
+

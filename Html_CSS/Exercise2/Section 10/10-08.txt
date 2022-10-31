@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Keat</title>
+    <style>
+        div {
+            width: 300px;
+            height: 200px;            
+            background: linear-gradient(45deg, #398235, #ffffff);   /* 그레이디언트 - 색상 각도, 색상1, 색상2 */   
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+</html>

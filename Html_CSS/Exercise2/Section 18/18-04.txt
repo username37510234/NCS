@@ -1,0 +1,10 @@
+           /* 반복 횟수 : 무한 반복 */
+            animation-iteration-count: infinite;
+            
+            /* 이곳에서 입력 진행 */
+            animation-direction: alternate;
+
+
+
+
+

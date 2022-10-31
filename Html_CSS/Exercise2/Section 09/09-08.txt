@@ -1,0 +1,48 @@
+<style>
+       ul {
+            overflow: hidden;
+            /* 부모 박스는 자식 박스를 포함 */
+        }        
+        li {
+            list-style: none;
+            /* 항목 태그의 블릿 아이콘을 숨김 */
+            float: left;
+            /* 왼쪽 기준 정렬 */
+            padding: 15px;
+            /* 안쪽 여백 공통 지정 */
+        }        
+        li:nth-child(2n) {
+            /* li 태그 중에서 짝수 번째에 해당하는 li 태그들의 배경 색상과 글자 색상을 지정 */
+            background: gray;
+            color: pink;
+        }        
+        li:nth-child(2n+1) {
+            /* li 태그 중에서 홀수 번째에 해당하는 li 태그들의 배경 색상과 글자 색상을 지정 */
+            background: black;
+            color: #ffd800;
+        }        
+        li:first-child {
+            /* li 태그 중에서 첫 번째에 해당하는 li 태그의 배경 색상과 글자 색상을 지정 */
+            background: black;
+            color: white;
+        }
+        
+        li:last-child {
+            /* li 태그 중에서 마지막 번째에 해당하는 li 태그들의 배경 색상과 글자 색상을 지정 */
+            background: gray;
+            color: green;
+        }
+</style>
+<body>
+    <ul>
+        <li>menu1</li>
+        <li>menu2</li>
+        <li>menu3</li>
+        <li>menu4</li>
+        <li>menu5</li>
+        <li>menu6</li>
+    </ul>
+</body>
+</html>
+
+

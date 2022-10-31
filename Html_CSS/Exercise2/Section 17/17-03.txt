@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">    
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Keat</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* .box를 포함하는 영역 아이디 graph 박스의 영역 */
+        #graph{
+            /* 넓이 */
+            width:700px;
+            /* 높이만큼 늘어남 */
+            overflow: hidden;
+            /* 테두리 스타일 */
+            border: 2px solid black;
+            /* 바깥쪽 여백 */
+            margin: 30px;
+        }
+                
+        /* 클래스 box의 기본 스타일 지정 */
+        
+        .box {
+            /* 넓이 */
+            width: 30px;
+            /* 높이 */
+            height: 50px;
+            /* 상대 좌표 */
+            position: relative;
+            /* 배경 색상 */
+            background-color: blue;
+            /* 바깥쪽 여백 */
+            margin: 10px;
+            /* 반응하는 선택자에 지정 */
+            /* 2초만큼 반응. 여기서 5s는 5초를 나타냄 .*/
+            transition-duration: 5s;
+        }
+        
+        #graph:hover .box {
+            width: 500px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div id="graph">
+
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+
+    </div>
+</body>
+</html>
+

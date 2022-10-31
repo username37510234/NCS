@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Keat </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+       div {
+            /* 넓이 */
+            width: 300px;
+            /* 높이 */
+            height: 300px;
+            /* 테두리 스타일 */
+            border: 4px solid black;
+            /* 바깥쪽 여백 */
+            margin-left: 30px;
+            /* 글자 크기 */
+            font-size: 30px; 
+            /* 절대 좌표 */
+            position: absolute;
+        }
+        
+        /* div 박스 중에서 첫 번째 박스 */
+        div:nth-of-type(1) {
+            /* 배경 색상 */
+            background-color: red;
+            /* 왼쪽 좌표 */
+            left:100px;
+            /* 상단 좌표 */
+            top:100px;
+        }
+        
+        /* div 박스 중에서 두 번째 박스 */
+        div:nth-of-type(2) {
+            /* 배경 색상 */
+            background-color: orange;
+            /* 왼쪽 좌표 */
+            left:250px;
+            /* 상단 좌표 */
+            top:250px;
+            /* 우선 순위 변경 */
+            z-index: 3;
+        }
+        
+         /* div 박스 중에서 세 번째 박스 */
+        div:nth-of-type(3) {
+            /* 배경 색상 */
+            background-color: green;
+            /* 왼쪽 좌표 */
+            left:400px;
+            /* 상단 좌표 */
+            top:400px;
+        }
+    </style>
+</head>
+<body>
+    <div>box-1</div>
+    <div>box-2</div> 
+    <div>box-3</div>
+</body>
+</html>

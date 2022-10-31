@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>스타일시트</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .color1 {
+            color: green;
+        }
+        /*글자 색상*/
+    </style>
+</head>
+<body>
+
+    <h1>스마트폰 웹디자인</h1>
+    <h2 class="color1">Smartphone Web Design</h2>
+
+    <p class="color1">
+        스마트폰 가입자가 급속히 증가하는 스마트폰 시대에 맞춰 모바일 기반에 최적화된 새로운 UI, UX와 콘텐츠로 구성하여 이용하기 쉽고 데이터 사용도 적은 웹사이트가 제작되고 있습니다.
+    </p>
+
+</body>
+</html>
+

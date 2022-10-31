@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">    
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>연습문제 7-3</title>
+    <!--google.com/fonts 웹 폰트-->
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <style>
+        
+        /*-----------웹 문서 제작 시 초기화 스타일-------*/
+        
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        a {  /* 링크 속성 글자 밑줄 없앰 */
+            text-decoration: none;
+        }
+        
+        li {  /* 항목 태그 블릿 아이콘 장식 없앰 */
+            list-style: none;
+        }
+        
+        img {  /* inline 속성을 지니고 있는 img 태그의 오차 간격을 없애기 위한 속성 변경 */
+            display: block;
+            /* img 태그의 모든 테두리선은 없음으로 초기화 */
+            border: none;
+        }
+        
+        body {
+            /* 글꼴 */
+            font-family: 'Arial';
+            /* 글자 크기 */
+            font-size: 16px;
+            /* 글자 색상 */
+            color: black;
+            /* 줄 간격 */
+            line-height: 28px;
+        }
+        
+        /*----------여기서부터 디자인---------*/
+        
+        /* 로고 */        
+        .logo {
+            /* 가로 넓이 */
+            width: 200px;
+            /* 줄 간격 */
+            line-height: 40px;            
+            /* 글자 정렬 */
+            text-align: center;
+            /* 높이만큼 늘어남 */
+            overflow: hidden;
+            /* block 형태의 가운데 정렬, 상하바깥쪽 여백은 10px */
+            margin: 10px auto;
+            /* 글꼴, 영문 웹 폰트 서체 */
+            font-family: 'Lobster', cursive;
+        }
+        
+        /*메뉴*/        
+        .nav>li {
+            /* 왼쪽 기준 정렬 */
+            float: left;
+            /* 가로 넓이 */
+            width: 130px;            
+            /* 바깥쪽 왼쪽 여백 */
+            margin-left: 20px;
+            /* 바깥쪽 오른쪽 여백 */
+            margin-right: 20px;
+            /* 글자 정렬 */
+            text-align: center;
+        }
+        
+        .nav>li img {
+            /* 이미지는 넓이와 높이를 지정하지 않아도 값을 갖고 있으며,
+               block 속성일 때 가운데 배치는 margin:0 auto를 지정하여 좌우
+               가운데 배치가 가능(img 태그의 현재 초기값은 block) */
+            margin: 0 auto;
+        }
+        
+        .nav>li>a {
+            /* 글자 색상 */
+            color: black;
+        }
+        
+        .nav>li>a:hover {
+            /* a속성에 마우스를 올렸을 때 a속성의 하단 테두리 스타일 지정 */
+            border-bottom: 2px solid red;
+        }
+        
+        .nav {
+            /* 가로 넓이 */
+            width: 850px;
+            /* 높이만큼 늘어남 */
+            overflow: hidden;
+            /* block 형태의 가운데 정렬 */
+            margin: 10px auto;
+        }
+        
+        /* 메인 박스 */        
+        .mainbox {
+            /* 가로 넓이 */
+            width: 1600px;
+            /* 세로 높이 */
+            height: 633px;
+            /* 높이만큼 보여짐 */
+            overflow: hidden;            
+            /* block 형태의 가운데 정렬. 바깥쪽 상하 여백은 10px */
+            margin: 10px auto;
+        }
+        
+        .mainbox>img {
+            /* 왼쪽 기준 정렬 */
+            float: left;
+        }
+        
+        .mainbox>.right {
+            /* 가로 넓이 */
+            width: 316px;
+            /* 세로 높이 */
+            height: 633px;
+            /* 오른쪽 기준 정렬 */
+            float: right;           
+            /* 높이만큼 보여짐 */
+            overflow: hidden;
+        }
+        
+        .mainbox>.right>.box {
+            /* 가로 넓이 */
+            width: 316px;
+            /* 세로 높이 */
+            height: 160px;
+            /* 바깥쪽 상단 여백 */
+            margin-top: 10px;            
+            /* 테두리 값을 박스 넓이와 높이에 포함시킴 */
+            box-sizing: border-box;
+            /* 테두리 스타일 */
+            border: 4px solid black;
+            /* 글자 정렬 */
+            text-align: center;
+        }
+        
+        .mainbox>.right>.box>span:first-child {
+            /* 배경 색상 */
+            background-color: darkmagenta;
+            /* 글자 굵기 */
+            font-weight: 900;
+            /* 줄 간격 */
+            line-height: 46px;            
+            /* 바깥쪽 상단 여백 */
+            margin-top: 20px;
+            /* 속성 변경 */
+            display: block;
+            /* 글자 색상 */
+            color: white;
+        }
+        
+        .mainbox>.right>.box>span:last-child {           
+            /* 글자 크기 */
+            font-size: 28px;
+            /* 글자 굵기 */
+            font-weight: 900;
+            /*  자간 */
+            letter-spacing: -2px;
+        }
+        
+        /* 제품 박스 01*/        
+        .pro_box01 {
+            /* 가로 넓이 */
+            width: 1600px;
+            /* 세로 높이 */
+            height: 1060px;
+            /* 높이만큼만 보여짐 */
+            overflow: hidden;            
+            /* block 속성일 때 가운데 정렬. 바깥쪽 상하 여백 */
+            margin: 10px auto;
+        }
+        
+        .pro_box01>.left {
+            /* 왼쪽 기준 정렬 */
+            float: left;
+            /* 가로 넓이 */
+            width: 784px;
+            /* 세로 높이 */
+            height: 1060px;            
+        }
+        
+        .pro_box01>img {
+            /* 오른쪽 기준 정렬 */
+            float: right;
+        }
+        
+        .pro_box01 .youtube01 {
+            /* 왼쪽 기준 정렬 */
+            float: left;
+            /* 가로 넓이 */
+            width: 783px;
+             /* 세로 높이 */
+            height: 511px;
+            /* 바깥쪽 상단 여백 */
+            margin-top: 10px;            
+        }
+        
+        /* 제품 박스 02 */        
+        .pro_box02 {
+            /* 가로 넓이 */
+            width: 1600px;
+            /*높이만큼 늘어남 */
+            overflow: hidden;            
+            /* block 속성일 때 가운데 정렬. 바깥쪽 상하 여백 */
+            margin: 10px auto;
+        }
+        
+        /* 제품 박스 03 */        
+        .pro_box03 {
+            /* 가로 넓이 */
+            width: 1600px;
+            /* 세로 높이 */
+            height: 726px;
+            /* 높이만큼만 보여짐 */
+            overflow: hidden;            
+            /* block 속성일 때 가운데 정렬. 바깥쪽 상하 여백 */
+            margin: 10px auto;
+        }
+        
+        .pro_box03>img {
+            /* 왼쪽 기준 정렬 */
+            float: left;
+        }
+        
+        .pro_box03>.right {
+            /* 가로 넓이 */
+            width: 805px;
+            /* 세로 높이*/
+            height: 726px;
+            /* 높이만큼만 보여짐 */
+            overflow: hidden;
+            /* 오른쪽 기준 정렬 */
+            float: right;            
+        }
+        
+        .pro_box03 .youtube02 {
+            /* 가로 넓이 */
+            width: 805px;
+            /* 세로 높이 */
+            height: 511px;            
+        }
+        
+        .pro_box03 .send_box {
+            /* 가로 넓이 */
+            width: 805px;
+            /* 세로 높이 */
+            height: 205px;            
+            /* 바깥쪽 상단 여백 */
+            margin-top: 10px;
+            /* 높이만큼만 보여짐 */
+            overflow: hidden;
+        }
+        
+        .pro_box03 .email {
+            /* 가로 넓이 */
+            width: 600px;
+            /* 세로 높이 */
+            height: 35px;
+            /* 높이만큼만 보여짐 */
+            overflow: hidden;
+            /* block 속성일 때 가운데 정렬. 바깥쪽 상하 여백 */
+            margin: 85px auto;            
+        }
+        
+        .pro_box03 label {
+            /* 가로 넓이 */
+            width: 100px;
+            /* 줄 간격 */
+            line-height: 35px;
+            /* 왼쪽 기준 정렬 */
+            float: left;            
+            /* 글자 정렬 */
+            text-align: center;
+            /* 속성 변경 */
+            display: block;
+        }
+        
+        .pro_box03 input[type=text] {
+            /* 가로 넓이 */
+            width: 400px;
+            /* 세로 높이 */
+            height: 35px;
+            /* 속성 변경 */
+            display: block;
+            /* 왼쪽 기준 정렬 */
+            float: left;
+            /* 배경 색상 */
+            background-color: whitesmoke;
+            /* 테두리 없음 */
+            border: none;
+            /* 왼쪽 안쪽 여백 */
+            padding-left: 20px;
+            /* 테두리 값을 박스 넓이와 높이에 포함시킴 */
+            box-sizing: border-box;
+        }
+        
+        .pro_box03 input[type=text]:focus {
+            /* 배경 색상 */
+            background-color: coral;
+            /* 테두리 표시를 없앰 */
+            outline: none;
+        }
+        
+        .pro_box03 input[type=submit] {
+            /* 가로 넓이 */
+            width: 100px;
+            /* 세로 높이 */
+            height: 35px;
+            /* 속성 변경 */
+            display: block;
+            /* 테두리 없앰 */
+            border: none;
+            /* 왼쪽 기준 정렬 */
+            float: left;
+            /* 마우스 커서에 포인트 스타일 지정 */
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+
+<body>    
+    
+    <!--로고-->
+    <h1 class="logo">Alfredo<br>gonzales</h1>
+
+    <!--상단 메뉴-->
+    <ul class="nav">
+        <li>
+            <a href="#"><img src="menu01.png" alt="대체 이미지">Home</a>
+        </li>
+        <li>
+            <a href="#"><img src="menu02.png" alt="대체 이미지">Shop</a>
+        </li>
+        <li>
+            <a href="#"><img src="menu03.png" alt="대체 이미지">Custombox</a>
+        </li>
+        <li>
+            <a href="#"><img src="menu04.png" alt="대체 이미지">Blog</a>
+        </li>
+        <li>
+            <a href="#"><img src="menu05.png" alt="대체 이미지">Story</a>
+        </li>
+    </ul>
+
+    <!--메인박스-->
+    <div class="mainbox">
+        <img src="header01.jpg" alt="대체 이미지">
+
+        <div class="right">
+            <img src="side01.jpg" alt="대체 이미지">
+            <div class="box">
+                <span>DESIGN YOUR OWN SOCK</span>
+                <br>
+                <span>THE WORK SHOP</span></div>
+            <div class="box">
+                <span>SELF SERVICE</span>
+                <br>
+                <span>ONLINE STORE</span>
+            </div>
+        </div>
+    </div>
+
+    <!--제품박스01-->
+    <div class="pro_box01">
+        <div class="left">
+            <img src="banner_01.jpg" alt="대체 이미지">
+            <div class="youtube01">
+                <!--youtube영상 가져오기-->
+                <iframe></iframe>
+            </div>
+        </div>
+        <img src="banner_02.jpg" alt="대체 이미지">
+    </div>
+
+    <!--제품박스02-->
+    <div class="pro_box02">
+        <img src="banner_03.jpg" alt="대체 이미지">
+        <img src="banner_04.jpg" alt="대체 이미지">
+        <img src="video.jpg" alt="대체이미지">
+    </div>
+
+    <!--제품박스03-->
+    <div class="pro_box03">
+        <img src="banner_05.jpg" alt="대체 이미지">
+        <div class="right">
+            <div class="youtube02">
+                <!--youtube영상 가져오기-->
+                <iframe></iframe>
+            </div>
+            <div class="send_box">
+                <div class="email">
+                    <label>SIGN UP</label>
+                    <input type="text" placeholder="YOUR EMAIL ADDRESS">
+                    <input type="submit" value="SEND">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

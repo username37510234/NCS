@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">   
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>연습문제 7-1</title>
+    <style>        
+        /* id 속성값으로 header를 가지는 태그의 자손 위치에 있는 h1 태그의 color 속성에
+           red 키워드를 적용하고 배경 색상으로는 yellow 키워드를 적용 */        
+        #header>h1 {
+            color: red;
+            background-color: yellow;
+        }        
+        /* id 속성값으로 section을 가지는 태그의 자손 위치에 있는 h1 태그의 color 속성에
+           orange 키워드를 적용하고 배경 색상으로는 green 키워드를 적용 */        
+        #section>h1 {
+            color: orange;
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="header">
+        <h1 class="title">SBS아카데미컴퓨터아트학원</h1>
+        <p>내가 하는 일이 예술이 된다!</p>
+    </div>
+    <div id="section">
+        <h1 class="title">코리아IT학원</h1>
+        <p>디자인교육 기술을 넘어 예술이 된다!</p>
+    </div>
+
+</body>
+</html>

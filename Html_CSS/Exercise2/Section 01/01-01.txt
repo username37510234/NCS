@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>HTML 문서 기본 구조 이해</title>
+</head>
+
+<body>
+    
+    <h1>HTML이란</h1>
+    <p>
+        웹 문서를 제작하는 데 쓰이는<br>
+        기본 프로그래밍 언어
+    </p>
+    
+</body>
+</html>

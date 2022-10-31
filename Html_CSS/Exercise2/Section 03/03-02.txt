@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>단락 태그</title>
+</head>
+
+<body>
+
+    <h1>Header-1</h1>
+    <p>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+    </p>
+    <p>
+      when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+    </p>
+
+</body>
+</html>

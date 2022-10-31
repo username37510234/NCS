@@ -1,0 +1,9 @@
+.main {
+    width: 1089px; /* 배너 박스와 로그인 박스를 더한 값 */
+    height: 124px; /* 박스 2개의 고정 높이 */
+    background-color: gray; /* 높이값을 확인하기 위해 배경 색상 지정 */
+    margin: 0 auto; /* margin 값이 2개일 때 top bottom, left right로 지정 */
+   /* block 속성을 가진 박스의 넓이가 지정되어 있을 때 margin:0 auto를 통해 가운데
+      배치가 가능하며 margin: auto auto라고 입력하면 브라우저의 위아래는 자동 인식
+      이 되지 않지만 좌우는 자동으로 가운데 배치가 가능 */
+        }
