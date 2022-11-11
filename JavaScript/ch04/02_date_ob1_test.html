@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title> 날짜 정보 객체 </title>
+	<script>
+
+		var today = new Date();
+		var nmonth = today.getMonth();
+		var ndate = today.getDate();
+		var nday = today.getDay();
+
+		document.write("<h1>오늘 날짜 정보</h1>");
+		document.write("현재 몇 월: " + nmonth + "<br>");
+		document.write("현재 몇 일: " + ndate + "<br>");
+		document.write("현재 요일: " + nday + "<br>");
+
+		var worldcup = new Date(2002, 4, 31);
+		var tmonth = worldcup.getMonth();
+		var tdate = worldcup.getDate();
+		var tday = worldcup.getDay();
+
+		document.write("<h1>월드컵 날짜 정보</h1>");
+		document.write("2002월드컵 몇 월: " + tmonth + "<br>");
+		document.write("2002월드컵 몇 일: " + tdate + "<br>");
+		document.write("2002월드컵 요일: " + tday + "<br>");
+	</script>
+</head>
+
+<body>
+</body>
+
+</html>

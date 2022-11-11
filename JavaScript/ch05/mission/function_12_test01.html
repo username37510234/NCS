@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset = "UTF-8">
+<title> 함수 </title>
+<script>
+	function chColor() {
+		var arrNum1 = (Math.floor(Math.random()*256)).toString(16);
+		var arrNum2 = (Math.floor(Math.random()*256)).toString(16);
+		var arrNum3 = (Math.floor(Math.random()*256)).toString(16);
+		var bodyTag = document.getElementById("theBody");
+		bodyTag.style.backgroundColor = "#"+arrNum1+arrNum2+arrNum3;
+		/*console.log("#"+arrNum1+arrNum2+arrNum3);*/
+	}
+</script>
+</head>
+<body id="theBody">
+    <button onclick="chColor();">배경 색상 바꾸기</button>
+</body>
+</html>

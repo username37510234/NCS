@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title> 종합실습1-2 </title>
+<script>
+		var first = 1200;
+		var second = 1300;
+		var third = 1000;
+
+		var avgSales = (first+second+third)/3; //평균 판매량 
+		var fourth = prompt("4분기 판매량은?", "0");
+		var msg_1 = "판매량이 평균 이상입니다.",
+						msg_2 = "퍈매량이 평균 미달입니다.";
+				
+		var result =  fourth>=avgSales ? msg_1 : msg_2;
+		document.write("<table><tr><td>1분기</td><td>"+first+"</td></tr>");
+		document.write("<tr><td>2분기</td><td>"+second+"</td></tr>");
+		document.write("<tr><td>3분기</td><td>"+third+"</td></tr>");
+		document.write("<tr><td></td><td></td></tr>");
+		document.write("<tr><td>4분기</td><td>"+fourth+"</td></tr>");
+		document.write("</table>")
+		document.write(result);
+</script>
+</head>
+<body>
+</body>
+</html>

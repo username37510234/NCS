@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title> 함수 </title>
+    <script src="js/CheckWeight.js"></script>
+    <script>
+
+        var jang = new CheckWeight("장보리", 168, 62);
+        var park = new CheckWeight("박달재", 180, 88);
+        console.log(jang);
+        console.log(park);
+
+        document.write(jang.getinfo());
+        document.write(jang.getResult());
+
+        document.write("<P>");
+
+        document.write(jang.getResult === park.getResult);
+        document.write("<P>");
+
+        document.write(park.getinfo());
+        document.write(park.getResult());
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
