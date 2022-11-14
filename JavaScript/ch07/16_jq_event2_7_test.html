@@ -6,6 +6,17 @@
 <script src="js/jquery.js"></script>
 <script>
 $(function(){
+	$(function () {
+		$(".btn_wrap").delegate("mouseover foucs", function () {
+			alert("HELLO!");
+		});
+		$(".btn_1").addClass("on");
+
+		$(document).on("mouseover focus", ".btn_2.on", function () {
+			alert("WELCOME!");
+		});
+		$(".btn_2").addClass("on");
+	});
 
 });
 </script>
