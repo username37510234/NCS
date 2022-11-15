@@ -1,22 +1,33 @@
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+
 <head>
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<title> new document </title>
-<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
-<script type="text/javascript">
-//<![CDATA[
-$(function(){
- 
- 
- 
-});
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title> new document </title>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript">
+        //<![CDATA[
+        $(function () {
+            var count = 0
+            $("#btn").on("click", function () {
+                $("h1").fadeOut(1000,"linear");
+                if(count == 1){
+                    $("h1").fadeIn(1000,"linear");
+                    count = 0;
+                    return;
+                }else{
+                count = 1;
+                }
+            });
+        });
 //]]>
-</script>
+    </script>
 </head>
+
 <body>
- <button id="btn">버튼</button>
- <h1>내용</h1>
+    <button id="btn">버튼</button>
+    <h1>내용</h1>
 </body>
+
 </html>
