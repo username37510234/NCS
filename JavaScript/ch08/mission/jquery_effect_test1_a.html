@@ -11,13 +11,13 @@
         $(function () {
             var count = 0
             $("#btn").on("click", function () {
-                $("h1").fadeOut(1000,"linear");
-                if(count == 1){
-                    $("h1").fadeIn(1000,"linear");
+                $("h1").fadeOut(1000, "linear");
+                if (count == 1) {
+                    $("h1").fadeIn(1000, "linear");
                     count = 0;
                     return;
-                }else{
-                count = 1;
+                } else {
+                    count = 1;
                 }
             });
         });

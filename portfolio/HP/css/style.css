@@ -1,0 +1,29 @@
+/* 초기화 */
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+/* x축 밖 요소 감추기 */
+body{
+    overflow-x: hidden;
+}
+
+li{
+    display: inline;
+    width: 150px;
+    background-color: #000;
+    padding: 15px;
+    border-top: solid 5px #dfdfdf;
+    transition: background-color 0.2s, marginleft 0.5s;
+    float: right;
+}
+
+li:hover {
+    background-color: gray;
+    padding-top: 10px;
+}
+
+ul{
+    margin-right: 5%;
+}
