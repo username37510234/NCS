@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-<meta charset="UTF-8">
-<title> Ajax </title>
-<script src="js/jquery.js"></script>
-<script>
-$(function() {
 
-});
-</script>
+<head>
+  <meta charset="UTF-8">
+  <title> Ajax </title>
+  <script src="js/jquery.js"></script>
+  <script>
+    $(function () {
+      var href = "https://username37510234.github.io/Port/member_test.php?cllback=myFnc";
+      $.ajax({
+        url: href, dataType: "jsonp"
+      }).done(function myFnc(data) {
+        console.log(data);
+      });
+    });
+  </script>
 </head>
+
 <body>
   <div class="wrap"></div>
 </body>
+
 </html>

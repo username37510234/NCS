@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-<meta charset="UTF-8">
-<title> Ajax </title>
-<script src="js/jquery.js"></script>
-<script>
-$(function() {
 
-});
-</script>
+<head>
+  <meta charset="UTF-8">
+  <title> Ajax </title>
+  <script src="js/jquery.js"></script>
+  <script>
+    $(function () {
+      $.ajax({
+        url: "http://imnews.imbc.com/rss/news/news_00.xml", dataType: "xml", success: function (data) {
+          console.log(data);
+        }
+      });
+    });
+  </script>
 </head>
+
 <body>
   <div class="wrap"></div>
 </body>
+
 </html>
