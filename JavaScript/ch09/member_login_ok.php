@@ -6,10 +6,8 @@
 	$user_pw = $_POST['user_pw'];
 
 	$members = array(
-		'korean'=>array('pw'=>'12345', 
-		'name'=>'박부장'),
-		'seoul'=>array('pw'=>'56789', 
-		'name'=>'홍대리')
+		'korean'=>array('pw'=>'12345', 'name'=>'박부장'),
+		'seoul'=>array('pw'=>'56789', 'name'=>'홍대리')
 	);
 
 	if(isset($members[$user_id]) &&  

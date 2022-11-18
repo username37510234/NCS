@@ -13,14 +13,11 @@ $(function() {
     var myData = $frm.serialize();
 
     $.ajax({
-      type: "POST",
-      url: $frm.attr("action"),
-      data: myData,
-      success:function(res) {
+      type: "POST", url: $frm.attr("action"),
+      data: myData, success:function(res) {
         if(res) {
          var jsonData = JSON.parse(res);
-         var message = jsonData.user_name + 
-         "( " + jsonData.user_id + " )" 
+         var message = jsonData.user_name + "( " + jsonData.user_id + " )" 
          + "님 반갑습니다";
          $(".login_wrap").html(message);
         }
