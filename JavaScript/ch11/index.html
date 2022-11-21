@@ -11,8 +11,9 @@
 <script src="js/isotope.pkgd.min.js"></script>
 <script src="js/common.js"></script>
 <script src="js/main.js"></script>
+<!-- 반영 안될경우 src 뒤에 '?ver*.*' 붙이면 갱신이 잘됨 -->
 <!--[if lt IE 9]>
-	<script src="js/html5shiv.js"></script>
+	<script src="js/html5shiv.js"></script> html5 요소 이전버전에서 작동하도록 하는 라이브러리
 	<script src="js/PIE.js"></script>
 	<script>
 		$(function(){
@@ -158,6 +159,7 @@
 			<h4 class="tab-btn-2"><a href="#">새소식</a></h4>
 			<div class="tab-container-2">
 				<p class="no-write">등록된 내용이 없습니다.</p>
+				<p class="icon-more"><a href="#">more</a></p>
 			</div>
 		</section>
 		<section id="best-book-wrap">
