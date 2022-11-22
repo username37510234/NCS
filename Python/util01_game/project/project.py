@@ -41,10 +41,10 @@ weapons = []
 weapon_speed = 5
 
 ball_images =[
-pygame.image.load("C:/NCS/Python/util01/project/balloon1.png"),
-pygame.image.load("C:/NCS/Python/util01/project/balloon2.png"),
-pygame.image.load("C:/NCS/Python/util01/project/balloon3.png"),
-pygame.image.load("C:/NCS/Python/util01/project/balloon4.png")]
+pygame.image.load("Python/util01_game/project/balloon1.png"),
+pygame.image.load("Python/util01_game/project/balloon2.png"),
+pygame.image.load("Python/util01_game/project/balloon3.png"),
+pygame.image.load("Python/util01_game/project/balloon4.png")]
 
 ball_speed_y = [-18,-15,-12,-9] # 인덱스 0,1,2,3 값
 
