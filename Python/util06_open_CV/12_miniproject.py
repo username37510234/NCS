@@ -29,6 +29,7 @@ def mouse_handler(event,x,y,flags,param):
         if len(point_list) == 4:
             show_result()
             next_point = point_list[0]
+            
         cv2.line(dst_img, prev_point,next_point, Colr, Thick, cv2.LINE_AA)
         
          
